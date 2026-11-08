@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denzel G. Fortez | Aspiring Front-End Developer & BSIT Portfolio</title>
+  <meta name="description" content="Digital portfolio, hybrid resume, and OJT cover letter of Denzel G. Fortez - 4th-Year BSIT Student at STI College Rosario specializing in Front-End Web Development, Mobile UI Layouts, and API Integrations.">
+  <meta name="author" content="Denzel G. Fortez">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Denzel G. Fortez | Front-End Developer & BSIT Portfolio">
+  <meta property="og:description" content="Explore Denzel's projects, capstone leadership, Codefest awards, technical stack, and ATS hybrid resume for 480-hour OJT.">
+  <meta property="og:type" content="website">
+
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION BAR
+       =================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="nav-logo-badge">DF</span>
+        <div class="nav-logo-text">Denzel<span>.dev</span></div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About & Goals</a>
+        <a href="#skills" class="nav-link">Tech Stack</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certs" class="nav-link">Certifications</a>
+        <a href="#github" class="nav-link">GitHub Activity</a>
+        <a href="#documents" class="nav-link">Resume & Letter</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Switcher (Dark / Light Mode) -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+          <i class="bi bi-sun-fill"></i>
+        </button>
+
+        <!-- View Resume CTA -->
+        <a href="#documents" class="btn btn-primary btn-sm" style="display: none;" id="navResumeCta">
+          <i class="bi bi-file-earmark-person"></i> Resume
+        </a>
+
+        <!-- Mobile Nav Hamburger -->
+        <button class="mobile-nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       HERO SECTION
+       =================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <!-- Availability Badge -->
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            Available for OJT Internship (480 Hours) &bull; 2026–2027
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Denzel Fortez</span>
+          </h1>
+
+          <div class="hero-role">
+            Aspiring <span>&lt;Front-End Developer /&gt;</span> &amp; BSIT Student
+          </div>
+
+          <p class="hero-bio">
+            Fourth-year Information Technology student at <b>STI College Rosario</b> with a passion for designing modern, responsive web interfaces, crafting mobile UI layout skeletons, and building intelligent web systems with AI APIs. Team Project Lead and 2nd Runner-Up awardee in the <b>STI Tagisan ng Talino CODEFEST 2025–2026</b>.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="bi bi-grid-fill"></i> View Projects
+            </a>
+            <a href="#documents" class="btn btn-secondary">
+              <i class="bi bi-file-earmark-text-fill"></i> View Resume &amp; Letter
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="bi bi-chat-dots-fill"></i> Let's Talk
+            </a>
+          </div>
+
+          <!-- Quick Stats Bar -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num">6+</span>
+              <span class="stat-label">Featured Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">2nd</span>
+              <span class="stat-label">Place STI Codefest</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">4</span>
+              <span class="stat-label">Verified Certifications</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">480</span>
+              <span class="stat-label">Required OJT Hours</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Avatar & Visual Card -->
+        <div class="hero-visual">
+          <div class="hero-avatar-card">
+            <div class="hero-avatar-img-wrap">
+              <img src="assets/images/denzel_profile.jpg" alt="Denzel G. Fortez" class="hero-avatar-img">
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top">
+              <span class="badge-icon"><i class="bi bi-trophy-fill"></i></span>
+              <span>2nd Runner-Up Codefest</span>
+            </div>
+
+            <div class="floating-badge badge-bottom">
+              <span class="badge-icon"><i class="bi bi-laptop-fill"></i></span>
+              <span>Capstone Project Lead</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       ABOUT & JOURNEY SECTION
+       =================================================================== */
+  =================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me &amp; Goals</span>
+        <h2 class="section-title">Bridging Code, Design, &amp; <span>Purpose</span></h2>
+        <p class="section-subtitle">
+          Dedicated to building user-centric digital experiences, mastering front-end architectures, and delivering dependable technology solutions.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Bio Card -->
+        <div class="about-card">
+          <h3><i class="bi bi-person-badge-fill"></i> Professional Profile</h3>
+          <p>
+            I am a fourth-year <b>Bachelor of Science in Information Technology (BSIT)</b> student at <b>STI College Rosario</b> (Section BSIT 704). My primary focus lies in front-end development, responsive web design, mobile UI engineering (Android XML fragments and UX skeletons), and full-stack integration with relational databases and modern APIs.
+          </p>
+          <p>
+            As a student developer, I pride myself on proactive leadership and team collaboration. I served as the <b>Team Project Lead and Front-End Developer</b> for our Capstone Project, orchestrating our development roadmap, GitHub collaboration, and integrating AI screening via the Gemini API. During the <b>STI Tagisan ng Talino CODEFEST 2025–2026</b>, I led our team's mobile UI execution to claim <b>2nd Runner-Up</b> at the local level.
+          </p>
+
+          <h3 style="margin-top: 1.8rem;"><i class="bi bi-compass-fill"></i> Career Goals &amp; OJT Aspirations</h3>
+          <p>
+            I am actively seeking an <b>On-the-Job Training (OJT) Internship</b> of <b>480 hours</b> in front-end and web engineering (such as with Endsofttech Web Solutions). My objective is to immerse myself in production workflows, expand my mastery of modern libraries such as <b>React</b>, collaborate with seasoned engineers, and bring tangible value through clean, accessible, and maintainable code.
+          </p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-label">Degree</span>
+              <span class="info-value">BS Information Technology</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Section &amp; Year</span>
+              <span class="info-value">BSIT 704 (4th Year)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Institution</span>
+              <span class="info-value">STI College Rosario</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Expected Graduation</span>
+              <span class="info-value">June 2027</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Location</span>
+              <span class="info-value">General Trias, Cavite</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">OJT Requirement</span>
+              <span class="info-value">480 Hours (Ready)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic & Technical Journey Timeline -->
+        <div class="about-card">
+          <h3><i class="bi bi-signpost-split-fill"></i> Academic &amp; Technical Journey</h3>
+          
+          <div class="timeline-wrap" style="margin-top: 1.5rem;">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">June 2024</div>
+              <h4 class="timeline-title">Oracle Academy Java Fundamentals</h4>
+              <p class="timeline-desc">
+                Awarded Certificate of Completion in Java Fundamentals under Oracle Academy instructor Beronika Peña, establishing strong object-oriented programming, data structures, and algorithmic principles.
+              </p>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">November 2025</div>
+              <h4 class="timeline-title">STI College Fair: AI &amp; Generative Models TechTalks</h4>
+              <p class="timeline-desc">
+                Earned two official certificates of participation covering "Building the Future with AI: Power, Responsibility &amp; Ethics" and "Development of AI &amp; Hands-on Demo Using Grok" at STI College Rosario.
+              </p>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">March 11, 2026</div>
+              <h4 class="timeline-title">2nd Runner-Up &bull; STI Tagisan ng Talino CODEFEST</h4>
+              <p class="timeline-desc">
+                Competed in the local championship as Front-End Android Developer, constructing XML UI layout skeletons, navigation fragments, and catalog screens for an animal shelter and vet adoption mobile application under strict time limits.
+              </p>
+            </div>
+
+            <!-- Timeline Item 4 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2025 – 2026</div>
+              <h4 class="timeline-title">Capstone Leadership: PIGEM Web System</h4>
+              <p class="timeline-desc">
+                Led the development of an Internet Service Application System featuring Gemini AI-assisted requirement screening, administrative pipeline monitoring, automated Gmail alerts, and cloud deployment on Vercel.
+              </p>
+            </div>
+
+            <!-- Timeline Item 5 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2026 – 2027</div>
+              <h4 class="timeline-title">Industry OJT Placement &amp; BSIT Graduation</h4>
+              <p class="timeline-desc">
+                Completing 480 hours of hands-on OJT training in front-end development, preparing for industry licensure and graduation in June 2027.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SKILLS & TECH STACK SECTION
+       =================================================================== -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tech Stack &amp; Competencies</span>
+        <h2 class="section-title">Tools &amp; <span>Technologies</span> I Work With</h2>
+        <p class="section-subtitle">
+          A balanced technical toolkit combining front-end engineering, mobile UI design, relational databases, game programming, and artificial intelligence APIs.
+        </p>
+      </div>
+
+      <!-- Filter Navigation -->
+      <div class="skills-filter-nav">
+        <button class="filter-btn active" data-filter="all">All Technologies</button>
+        <button class="filter-btn" data-filter="frontend">Front-End &amp; UI</button>
+        <button class="filter-btn" data-filter="backend">Backend &amp; Databases</button>
+        <button class="filter-btn" data-filter="tools">IDEs &amp; Tools</button>
+        <button class="filter-btn" data-filter="apis">APIs &amp; Cloud</button>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Skill 1 -->
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-filetype-html"></i></div>
+            <span class="skill-badge">Advanced</span>
+          </div>
+          <h4 class="skill-name">HTML5 &amp; Semantic Web</h4>
+          <p class="skill-desc">Accessible semantic layout structure, SEO best practices, modern forms, and standards compliance.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 90%;"></div></div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-filetype-css"></i></div>
+            <span class="skill-badge">Advanced</span>
+          </div>
+          <h4 class="skill-name">CSS3 &amp; Modern Layouts</h4>
+          <p class="skill-desc">Flexbox, CSS Grid, custom properties (CSS variables), keyframe animations, dark/light themes, and responsive design.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 88%;"></div></div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-filetype-js"></i></div>
+            <span class="skill-badge">Proficient</span>
+          </div>
+          <h4 class="skill-name">JavaScript (ES6+)</h4>
+          <p class="skill-desc">DOM manipulation, asynchronous fetch APIs, event loop, modular code organization, and interactive web features.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 82%;"></div></div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-android2"></i></div>
+            <span class="skill-badge">Competition Winner</span>
+          </div>
+          <h4 class="skill-name">Android XML &amp; UI Fragments</h4>
+          <p class="skill-desc">XML layout architecture, view binding, fragments, recycler views, and responsive mobile skeletons in Android Studio.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 85%;"></div></div>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-code-square"></i></div>
+            <span class="skill-badge">Familiar</span>
+          </div>
+          <h4 class="skill-name">React Fundamentals</h4>
+          <p class="skill-desc">Component-driven architecture, JSX syntax, props, hooks (useState, useEffect), and single-page application structure.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 75%;"></div></div>
+        </div>
+
+        <!-- Skill 6 -->
+        <div class="skill-card" data-category="backend">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-cup-hot-fill"></i></div>
+            <span class="skill-badge">Oracle Certified</span>
+          </div>
+          <h4 class="skill-name">Java Programming</h4>
+          <p class="skill-desc">Object-oriented programming, data structures, Swing GUI development (NetBeans), and Android backend integration.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 82%;"></div></div>
+        </div>
+
+        <!-- Skill 7 -->
+        <div class="skill-card" data-category="backend">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-window-stack"></i></div>
+            <span class="skill-badge">Proficient</span>
+          </div>
+          <h4 class="skill-name">C# &amp; .NET</h4>
+          <p class="skill-desc">Desktop application development in Visual Studio, Windows Forms, database connectivity, and Unity scripting.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 78%;"></div></div>
+        </div>
+
+        <!-- Skill 8 -->
+        <div class="skill-card" data-category="backend">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-filetype-py"></i></div>
+            <span class="skill-badge">Proficient</span>
+          </div>
+          <h4 class="skill-name">Python</h4>
+          <p class="skill-desc">Data scripting, backend automation, API calls, logic scripting, and algorithmic problem solving.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 76%;"></div></div>
+        </div>
+
+        <!-- Skill 9 -->
+        <div class="skill-card" data-category="backend">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-database-fill"></i></div>
+            <span class="skill-badge">Advanced</span>
+          </div>
+          <h4 class="skill-name">MySQL &amp; PostgreSQL</h4>
+          <p class="skill-desc">Relational database schemas, CRUD operations, joins, XAMPP local server setup, and cloud database integrations.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 84%;"></div></div>
+        </div>
+
+        <!-- Skill 10 -->
+        <div class="skill-card" data-category="backend">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-server"></i></div>
+            <span class="skill-badge">Coursework</span>
+          </div>
+          <h4 class="skill-name">MS SQL Server &amp; SAP</h4>
+          <p class="skill-desc">Enterprise database querying, stored procedures, table constraints, and SAP S/4HANA enterprise resource planning basics.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 72%;"></div></div>
+        </div>
+
+        <!-- Skill 11 -->
+        <div class="skill-card" data-category="tools">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-git"></i></div>
+            <span class="skill-badge">Daily Tool</span>
+          </div>
+          <h4 class="skill-name">Git &amp; GitHub</h4>
+          <p class="skill-desc">Version control, branch management, merge conflict resolution, repository collaboration, and automated deployments.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 85%;"></div></div>
+        </div>
+
+        <!-- Skill 12 -->
+        <div class="skill-card" data-category="tools">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-controller"></i></div>
+            <span class="skill-badge">Game Dev</span>
+          </div>
+          <h4 class="skill-name">Unity 3D</h4>
+          <p class="skill-desc">Interactive 3D game physics, scene composition, C# script controllers, asset pipelines, and road safety simulation.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 75%;"></div></div>
+        </div>
+
+        <!-- Skill 13 -->
+        <div class="skill-card" data-category="tools">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-terminal-fill"></i></div>
+            <span class="skill-badge">Proficient</span>
+          </div>
+          <h4 class="skill-name">Linux &amp; Windows CLI</h4>
+          <p class="skill-desc">Command-line navigation, bash scripting, file permissions, package management, and developer environment configuration.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 80%;"></div></div>
+        </div>
+
+        <!-- Skill 14 -->
+        <div class="skill-card" data-category="apis">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-cpu-fill"></i></div>
+            <span class="skill-badge">AI Integration</span>
+          </div>
+          <h4 class="skill-name">Google Gemini AI API</h4>
+          <p class="skill-desc">Prompt engineering, automated document and requirements analysis, multimodal validation, and intelligent chatbots.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 82%;"></div></div>
+        </div>
+
+        <!-- Skill 15 -->
+        <div class="skill-card" data-category="apis">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-envelope-at-fill"></i></div>
+            <span class="skill-badge">Services</span>
+          </div>
+          <h4 class="skill-name">Gmail API &amp; Captcha</h4>
+          <p class="skill-desc">Automated transactional email notifications, applicant verification status alerts, and Google reCAPTCHA anti-spam defense.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 80%;"></div></div>
+        </div>
+
+        <!-- Skill 16 -->
+        <div class="skill-card" data-category="apis">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="bi bi-triangle-fill"></i></div>
+            <span class="skill-badge">Cloud</span>
+          </div>
+          <h4 class="skill-name">Vercel Deployment</h4>
+          <p class="skill-desc">Continuous deployment from GitHub, environment variable protection, serverless API functions, and edge performance.</p>
+          <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 88%;"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FEATURED PROJECTS SECTION
+       =================================================================== -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio Showcase</span>
+        <h2 class="section-title">Featured <span>Technical Projects</span></h2>
+        <p class="section-subtitle">
+          Real-world applications and academic breakthroughs spanning AI-assisted web systems, Android mobile layouts, desktop software, and 3D simulations.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Capstone -->
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="assets/projects/pigem_capstone_hero.jpg" alt="PIGEM Internet Service Application System" class="project-thumb-img">
+            <span class="project-overlay-badge"><i class="bi bi-award-fill"></i> Capstone Project</span>
+          </div>
+          <div class="project-content">
+            <span class="project-role-tag">Team Project Lead &amp; Front-End Developer</span>
+            <h3 class="project-title">Internet Service Application System with AI Screening (PIGEM)</h3>
+            <p class="project-desc">
+              A comprehensive web platform streamlining internet service applications for community partners (Red Fiber &amp; PIGEM). Features automated document verification using Gemini AI API, automated email triggers via Gmail API, bot defense with Captcha API, and an administrative pipeline dashboard for application tracking.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HTML5/CSS3</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Gemini AI API</span>
+              <span class="project-tag">Gmail API</span>
+              <span class="project-tag">PostgreSQL/MySQL</span>
+              <span class="project-tag">Vercel</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://pigem-system-web.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="bi bi-box-arrow-up-right"></i> Live Web Demo
+                </a>
+                <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
+              <button class="btn btn-sm btn-outline cert-card" data-img="assets/projects/pigem_admin_dashboard.png" data-title="PIGEM Admin Dashboard" data-sub="Pipeline Status, Calendar &amp; Application Monitoring">
+                <i class="bi bi-eye"></i> Dashboard
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Codefest Vet App -->
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="assets/certs/codefest_2nd_runner_up_2026.jpg" alt="Vet & Pet Adoption Android App" class="project-thumb-img">
+            <span class="project-overlay-badge"><i class="bi bi-trophy-fill"></i> 2nd Runner-Up Award</span>
+          </div>
+          <div class="project-content">
+            <span class="project-role-tag">Front-End Android Developer (STI Codefest 2026)</span>
+            <h3 class="project-title">Vet &amp; Pet Adoption Mobile App UI Skeleton</h3>
+            <p class="project-desc">
+              Developed under intense competition conditions for the STI Tagisan ng Talino CODEFEST 2025–2026. Designed the full front-end XML layout skeleton, responsive fragment transitions, and interactive UI for browsing adoptable pets (photos, ages, breeds, medical status) with an adoption inquiry workflow.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Android Studio</span>
+              <span class="project-tag">Java</span>
+              <span class="project-tag">XML Layouts</span>
+              <span class="project-tag">UI Fragments</span>
+              <span class="project-tag">Recycler View</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="bi bi-github"></i> Repository
+                </a>
+              </div>
+              <button class="btn btn-sm btn-outline cert-card" data-img="assets/certs/codefest_2nd_runner_up_2026.jpg" data-title="Codefest 2nd Runner-Up Certificate" data-sub="Awarded at STI College Rosario on March 11, 2026">
+                <i class="bi bi-patch-check"></i> View Award
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Road Safety Unity -->
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #064e3b, #0f2419); display: flex; align-items: center; justify-content: center; color: #a7f3d0; font-size: 3rem;">
+              <i class="bi bi-car-front-fill"></i>
+            </div>
+            <span class="project-overlay-badge"><i class="bi bi-controller"></i> 3D Simulation</span>
+          </div>
+          <div class="project-content">
+            <span class="project-role-tag">Lead Programmer &amp; Logic Designer</span>
+            <h3 class="project-title">City Driver: Road Safety Challenge</h3>
+            <p class="project-desc">
+              An educational 3D driving simulation built in Unity to reinforce road safety principles, traffic signal obedience, and pedestrian hazard awareness. Programmed vehicle physics, obstacle triggers, scoring mechanisms, and violation feedback in C#.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Unity 3D</span>
+              <span class="project-tag">C# Scripting</span>
+              <span class="project-tag">Game Physics</span>
+              <span class="project-tag">UI Mechanics</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="bi bi-github"></i> GitHub Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Philippine Group 4 Bank -->
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #047857, #062b1b); display: flex; align-items: center; justify-content: center; color: #6ee7b7; font-size: 3rem;">
+              <i class="bi bi-bank2"></i>
+            </div>
+            <span class="project-overlay-badge"><i class="bi bi-shield-lock-fill"></i> Desktop System</span>
+          </div>
+          <div class="project-content">
+            <span class="project-role-tag">Software Developer</span>
+            <h3 class="project-title">Philippine Group 4 Bank System</h3>
+            <p class="project-desc">
+              A secure desktop banking management solution developed in C# using Microsoft Visual Studio and SQL database. Supports customer account creation, balance checking, funds transfer, secure PIN authentication, and audit logs.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">C#</span>
+              <span class="project-tag">.NET Windows Forms</span>
+              <span class="project-tag">Visual Studio</span>
+              <span class="project-tag">MS SQL Server</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="bi bi-github"></i> GitHub Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Redhub Cake Order Processing -->
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="assets/projects/redhub_cake_order.jpg" alt="Redhub Cake Order Processing" class="project-thumb-img">
+            <span class="project-overlay-badge"><i class="bi bi-cart-check-fill"></i> Java System</span>
+          </div>
+          <div class="project-content">
+            <span class="project-role-tag">Java Developer</span>
+            <h3 class="project-title">Redhub Cake Order Processing System</h3>
+            <p class="project-desc">
+              Bakery management and ordering desktop application created with Java in Apache NetBeans with MySQL database connectivity. Features interactive pastry product selection, automated billing calculation, real-time order processing loading bars, and order status updates.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Java Swing</span>
+              <span class="project-tag">Apache NetBeans</span>
+              <span class="project-tag">MySQL / XAMPP</span>
+              <span class="project-tag">VS Code</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="bi bi-github"></i> Repository
+                </a>
+              </div>
+              <button class="btn btn-sm btn-outline cert-card" data-img="assets/projects/redhub_cake_order.jpg" data-title="Redhub Cake Ordering Screen" data-sub="Java GUI Processing Pipeline">
+                <i class="bi bi-image"></i> Preview
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Digital Portfolio -->
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #059669, #022c1b); display: flex; align-items: center; justify-content: center; color: #a7f3d0; font-size: 3rem;">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <span class="project-overlay-badge"><i class="bi bi-lightning-charge-fill"></i> Live Portfolio</span>
+          </div>
+          <div class="project-content">
+            <span class="project-role-tag">Creator &amp; Front-End Developer</span>
+            <h3 class="project-title">Denzel Fortez Digital Portfolio &amp; ATS Resume Hub</h3>
+            <p class="project-desc">
+              Custom-built emerald green portfolio engineered with semantic HTML5, modern CSS3 with custom properties, vanilla JavaScript, live GitHub API activity fetching, ATS combination resume generator, and an integrated Gemini-powered AI Assistant.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HTML5 / CSS3</span>
+              <span class="project-tag">JavaScript (ES6+)</span>
+              <span class="project-tag">GitHub API</span>
+              <span class="project-tag">AI Chatbot</span>
+              <span class="project-tag">Vercel</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="bi bi-github"></i> Source Code
+                </a>
+              </div>
+              <a href="#documents" class="btn btn-sm btn-primary">
+                <i class="bi bi-file-earmark-person"></i> View Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       HONORS & CERTIFICATES SECTION
+       =================================================================== -->
+  <section class="certs-section" id="certs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Credentials &amp; Awards</span>
+        <h2 class="section-title">Verified <span>Honors &amp; Certifications</span></h2>
+        <p class="section-subtitle">
+          Official competition awards, industry course completions, and advanced AI seminars earned at STI College Rosario. Click on any certificate to inspect full resolution.
+        </p>
+      </div>
+
+      <div class="certs-grid">
+        <!-- Cert 1: Codefest 2nd Runner Up -->
+        <div class="cert-card" 
+             data-img="assets/certs/codefest_2nd_runner_up_2026.jpg" 
+             data-title="Certificate of Excellence &ndash; 2nd Runner-Up CODEFEST" 
+             data-sub="Awarded to Denzel G. Fortez at STI College Rosario (STI Tagisan ng Talino 2025–2026, March 11, 2026 &bull; Sandee R. Molato, MBA)">
+          <div class="cert-img-wrap">
+            <img src="assets/certs/codefest_2nd_runner_up_2026.jpg" alt="Codefest 2nd Runner Up" class="cert-img">
+            <div class="cert-zoom-overlay"><i class="bi bi-zoom-in"></i></div>
+          </div>
+          <div class="cert-body">
+            <span class="cert-badge badge-winner"><i class="bi bi-trophy-fill"></i> 2nd Runner-Up Award</span>
+            <h4 class="cert-title">CODEFEST &ndash; STI Tagisan ng Talino 2025–2026</h4>
+            <div class="cert-issuer">STI College Rosario (Local Level)</div>
+            <div class="cert-date"><i class="bi bi-calendar-event"></i> March 11, 2026</div>
+          </div>
+        </div>
+
+        <!-- Cert 2: Oracle Java Fundamentals -->
+        <div class="cert-card" 
+             data-img="assets/certs/oracle_java_fundamentals.png" 
+             data-title="Award of Course Completion &ndash; Java Fundamentals" 
+             data-sub="Presented to Denzel Fortez by Oracle Academy (Instructor Beronika Peña &bull; June 19, 2024)">
+          <div class="cert-img-wrap">
+            <img src="assets/certs/oracle_java_fundamentals.png" alt="Oracle Academy Java Fundamentals" class="cert-img">
+            <div class="cert-zoom-overlay"><i class="bi bi-zoom-in"></i></div>
+          </div>
+          <div class="cert-body">
+            <span class="cert-badge"><i class="bi bi-patch-check-fill"></i> Course Completion</span>
+            <h4 class="cert-title">Java Fundamentals</h4>
+            <div class="cert-issuer">Oracle Academy</div>
+            <div class="cert-date"><i class="bi bi-calendar-event"></i> June 19, 2024</div>
+          </div>
+        </div>
+
+        <!-- Cert 3: TechTalk Future with AI -->
+        <div class="cert-card" 
+             data-img="assets/certs/techtalk_building_future_ai.png" 
+             data-title="Certificate of Participation &ndash; TechTalk: Building the Future with AI" 
+             data-sub="STI College Fair 2025 &bull; Topics: Building the Future with AI & Generative AI and Ethics &bull; STI College Rosario">
+          <div class="cert-img-wrap">
+            <img src="assets/certs/techtalk_building_future_ai.png" alt="TechTalk AI Ethics" class="cert-img">
+            <div class="cert-zoom-overlay"><i class="bi bi-zoom-in"></i></div>
+          </div>
+          <div class="cert-body">
+            <span class="cert-badge"><i class="bi bi-cpu-fill"></i> AI TechTalk</span>
+            <h4 class="cert-title">Building the Future with AI &amp; Generative AI Ethics</h4>
+            <div class="cert-issuer">STI College Rosario College Fair</div>
+            <div class="cert-date"><i class="bi bi-calendar-event"></i> November 28, 2025</div>
+          </div>
+        </div>
+
+        <!-- Cert 4: TechTalk AI & Grok -->
+        <div class="cert-card" 
+             data-img="assets/certs/techtalk_development_of_ai_grok.png" 
+             data-title="Certificate of Participation &ndash; TechTalk: Development of AI & Demo Using Grok" 
+             data-sub="STI College Fair 2025 &bull; Development of AI & Demo Using Grok &bull; STI College Rosario">
+          <div class="cert-img-wrap">
+            <img src="assets/certs/techtalk_development_of_ai_grok.png" alt="TechTalk Grok" class="cert-img">
+            <div class="cert-zoom-overlay"><i class="bi bi-zoom-in"></i></div>
+          </div>
+          <div class="cert-body">
+            <span class="cert-badge"><i class="bi bi-robot"></i> AI TechTalk</span>
+            <h4 class="cert-title">Development of AI &amp; Hands-on Demo Using Grok</h4>
+            <div class="cert-issuer">STI College Rosario College Fair</div>
+            <div class="cert-date"><i class="bi bi-calendar-event"></i> November 28, 2025</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       LIVE GITHUB ACTIVITY & REPOSITORIES SECTION
+       =================================================================== -->
+  <section class="github-section" id="github">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Open Source &amp; Code</span>
+        <h2 class="section-title">Live <span>GitHub Activity</span></h2>
+        <p class="section-subtitle">
+          Real-time repositories dynamically synchronized from <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" style="color:var(--primary);text-decoration:underline;">github.com/zeltypo</a> via the GitHub REST API.
+        </p>
+      </div>
+
+      <div class="github-repos-grid" id="githubReposGrid">
+        <!-- Dynamically injected via js/main.js -->
+        <div class="repo-card" style="grid-column: 1 / -1; text-align: center; padding: 2rem;">
+          <i class="bi bi-arrow-repeat" style="font-size: 2rem; color: var(--primary);"></i>
+          <p style="margin-top: 0.5rem; color: var(--text-muted);">Fetching repositories from GitHub API...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       CAREER DOCUMENTS: HYBRID RESUME & COVER LETTER SECTION
+       =================================================================== -->
+  <section class="docs-section" id="documents">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career Documents (GE2510 Euthenics 2)</span>
+        <h2 class="section-title">ATS Resume &amp; <span>OJT Cover Letter</span></h2>
+        <p class="section-subtitle">
+          Prepared in compliance with STI GE2510 standards. Features a 1-page ATS-Friendly Combination (Hybrid) Resume and a personalized Cover Letter for Endsofttech Web Solutions.
+        </p>
+      </div>
+
+      <!-- Tab Navigation -->
+      <div class="docs-tab-nav">
+        <button class="doc-tab-btn active" data-target="tabResume">
+          <i class="bi bi-file-earmark-person"></i> Hybrid Resume (1 Page)
+        </button>
+        <button class="doc-tab-btn" data-target="tabCoverLetter">
+          <i class="bi bi-envelope-paper"></i> OJT Cover Letter
+        </button>
+        <button class="doc-tab-btn" data-target="tabSubmission">
+          <i class="bi bi-card-checklist"></i> Pre-Finals Submission Sheet
+        </button>
+      </div>
+
+      <!-- Display Card -->
+      <div class="doc-display-card">
+        
+        <!-- PANEL 1: HYBRID RESUME -->
+        <div class="doc-panel" id="tabResume" style="display: block;">
+          <div class="doc-header-action-bar">
+            <span class="doc-type-badge">Format: Combination (Hybrid) ATS Resume &bull; 1 Page</span>
+            <div class="doc-actions">
+              <a href="assets/docs/Fortez_Denzel_BSIT_OJT_Resume.pdf" download="Fortez_Denzel_BSIT_OJT_Resume.pdf" class="btn btn-sm btn-primary">
+                <i class="bi bi-download"></i> Download PDF
+              </a>
+              <button onclick="window.print()" class="btn btn-sm btn-secondary">
+                <i class="bi bi-printer"></i> Print / Save PDF
+              </button>
+            </div>
+          </div>
+
+          <div class="paper-container">
+            <h2 class="paper-title">DENZEL G. FORTEZ</h2>
+            <div class="paper-contact">
+              General Trias, Cavite, Philippines &bull; +63 916 569 0871 &bull; fortezdenzel@gmail.com &bull; github.com/zeltypo
+            </div>
+            <hr class="paper-divider">
+
+            <h3 class="paper-sec-heading">SUMMARY OF QUALIFICATIONS</h3>
+            <ul class="paper-bullet-list">
+              <li><b>Fourth-year BSIT student</b> at STI College Rosario specializing in front-end web development, responsive mobile UI/UX engineering, and API integrations with strong problem-solving and software development skills.</li>
+              <li><b>Award-winning competition lead:</b> 2nd Runner-Up in STI Tagisan ng Talino CODEFEST 2025–2026 (Android XML/Java UI development) and Capstone Team Project Lead for an AI-assisted web application system.</li>
+              <li>Hands-on proficiency across modern web technologies, relational databases, game development in Unity, version control via Git/GitHub, and cloud deployment on Vercel.</li>
+            </ul>
+
+            <h3 class="paper-sec-heading">KEY TECHNICAL SKILLS</h3>
+            <ul class="paper-bullet-list">
+              <li><b>Programming &amp; Front-End:</b> HTML5, CSS3, JavaScript (ES6+), React basics, XML (Android UI), Python, Java, C#</li>
+              <li><b>Databases &amp; Backend:</b> PostgreSQL, MySQL / XAMPP, Microsoft SQL Server, SAP Fundamentals</li>
+              <li><b>APIs &amp; Integrations:</b> Gemini AI API integration, Gmail API, Captcha API, RESTful APIs, GitHub API</li>
+              <li><b>Tools, IDEs &amp; Platforms:</b> Git, GitHub, Vercel, Visual Studio, VS Code, Apache NetBeans, Android Studio, Unity, Linux, Windows CLI</li>
+              <li><b>Core Competencies:</b> Responsive Web Design, UI/UX Layout Skeleton, Technical Documentation, Software Testing, Debugging</li>
+            </ul>
+
+            <h3 class="paper-sec-heading">EXPERIENCE &amp; TECHNICAL PROJECTS</h3>
+            <div class="paper-item-header">
+              <span><b>Internet Service Application System with AI Screening (PIGEM)</b> &bull; Capstone Project</span>
+              <span>2025 – 2026</span>
+            </div>
+            <div class="paper-item-sub">Role: Team Project Lead &amp; Front-End Developer | Tech: HTML5, CSS3, JS, Gemini API, Gmail API, Captcha API, PostgreSQL/MySQL, Vercel</div>
+            <ul class="paper-bullet-list">
+              <li>Directed frontend architecture and responsive client portal for internet application management, coordinating sprint tasks via GitHub.</li>
+              <li>Integrated Gemini AI API for automated applicant requirements screening and validation, reducing manual processing overhead.</li>
+              <li>Engineered admin pipeline dashboard with application status tracking, calendar scheduling, and automated Gmail notifications.</li>
+            </ul>
+
+            <div class="paper-item-header" style="margin-top: 0.9rem;">
+              <span><b>Vet &amp; Pet Adoption Android App Skeleton</b> &bull; STI Tagisan ng Talino CODEFEST</span>
+              <span>March 2026</span>
+            </div>
+            <div class="paper-item-sub">Role: Front-End Android Developer (2nd Runner-Up Award) | Tech: Android Studio, Java, XML, UI Fragments</div>
+            <ul class="paper-bullet-list">
+              <li>Engineered responsive XML UI layouts, fragments, and navigation structure for pet catalog browsing and adoption inquiries under timed competition rules.</li>
+              <li>Awarded <b>2nd Runner-Up</b> in the local level championship at STI College Rosario for robust UI/UX execution and clean design skeleton.</li>
+            </ul>
+
+            <div class="paper-item-header" style="margin-top: 0.9rem;">
+              <span><b>Additional Technical Implementations</b></span>
+            </div>
+            <ul class="paper-bullet-list">
+              <li><b>City Driver: Road Safety Challenge (Unity 3D / C#)</b> &mdash; <i>Lead Programmer</i>: Built 3D driving mechanics &amp; road safety simulations.</li>
+              <li><b>Philippine Group 4 Bank System (C# / Visual Studio)</b> &mdash; <i>Developer</i>: Built secure desktop banking GUI for transactions &amp; account management.</li>
+              <li><b>Redhub Cake Ordering System (Java / NetBeans / MySQL)</b> &mdash; <i>Developer</i>: Implemented catalog navigation, order pipelines &amp; processing loading states.</li>
+            </ul>
+
+            <h3 class="paper-sec-heading">EDUCATION</h3>
+            <div class="paper-item-header">
+              <span><b>STI College Rosario</b> &mdash; Tejero, Rosario, Cavite</span>
+              <span>Expected Graduation: June 2027</span>
+            </div>
+            <div class="paper-item-sub">Bachelor of Science in Information Technology (BSIT) &bull; Section: BSIT 704 &bull; 4th Year Student</div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+              <b>Relevant Coursework:</b> Web Development &amp; Systems, Mobile Application Development, Database Management Systems, Object-Oriented Programming (Java/C#), Systems Analysis &amp; Design, Information Security.
+            </p>
+
+            <h3 class="paper-sec-heading">HONORS, CERTIFICATIONS &amp; TRAININGS</h3>
+            <ul class="paper-bullet-list">
+              <li><b>2nd Runner-Up &ndash; CODEFEST</b>, STI Tagisan ng Talino 2025–2026 Local Level (STI College Rosario, March 11, 2026)</li>
+              <li><b>Award of Course Completion: Java Fundamentals</b> &ndash; Oracle Academy (Beronika Peña, Instructor, June 19, 2024)</li>
+              <li><b>Certificate of Participation: TechTalk &ndash; Building the Future with AI &amp; Generative AI Ethics</b> (STI College Rosario, Nov 28, 2025)</li>
+              <li><b>Certificate of Participation: TechTalk &ndash; Development of AI &amp; Demo Using Grok</b> (STI College Rosario, Nov 28, 2025)</li>
+            </ul>
+
+            <h3 class="paper-sec-heading">OJT AVAILABILITY &amp; REFERENCES</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">
+              <b>Required OJT Hours:</b> 480 Hours &nbsp;|&nbsp; <b>Preferred Start Date:</b> Immediate / February 2026 &nbsp;|&nbsp; <b>References:</b> Available upon request.
+            </p>
+          </div>
+        </div>
+
+        <!-- PANEL 2: COVER LETTER -->
+        <div class="doc-panel" id="tabCoverLetter" style="display: none;">
+          <div class="doc-header-action-bar">
+            <span class="doc-type-badge">Official OJT Cover Letter &bull; 1 Page</span>
+            <div class="doc-actions">
+              <a href="assets/docs/Fortez_Denzel_BSIT_OJT_Cover_Letter.pdf" download="Fortez_Denzel_BSIT_OJT_Cover_Letter.pdf" class="btn btn-sm btn-primary">
+                <i class="bi bi-download"></i> Download PDF
+              </a>
+              <button onclick="window.print()" class="btn btn-sm btn-secondary">
+                <i class="bi bi-printer"></i> Print / Save PDF
+              </button>
+            </div>
+          </div>
+
+          <div class="paper-container">
+            <h2 class="paper-title">DENZEL G. FORTEZ</h2>
+            <div class="paper-contact">
+              General Trias, Cavite, Philippines &bull; +63 916 569 0871 &bull; fortezdenzel@gmail.com &bull; github.com/zeltypo
+            </div>
+            <hr class="paper-divider">
+
+            <p style="margin-bottom: 0.8rem; font-size: 0.92rem;"><b>November 8, 2026</b></p>
+            <p style="margin-bottom: 1.2rem; font-size: 0.92rem; line-height: 1.4;">
+              <b>The Hiring Manager / HR Department</b><br>
+              Endsofttech Web Solutions<br>
+              Cavite, Philippines
+            </p>
+
+            <p style="margin-bottom: 1rem; font-size: 0.92rem;">Dear Hiring Manager,</p>
+
+            <p style="margin-bottom: 1rem; font-size: 0.92rem; line-height: 1.7;">
+              Good day.<br><br>
+              I am writing to express my strong interest in applying for an <b>On-the-Job Training (OJT) Internship</b> position in your organization, specifically in <b>Front-End Web Development</b>. I am currently a fourth-year student pursuing a <b>Bachelor of Science in Information Technology (BSIT)</b> at <b>STI College – Rosario</b> (Section BSIT 704).
+            </p>
+
+            <p style="margin-bottom: 1rem; font-size: 0.92rem; line-height: 1.7;">
+              As outlined in my enclosed resume, I have established practical competencies in front-end web development, responsive user interface design, relational databases, and API integrations. My technical stack includes <b>HTML5, CSS3, JavaScript (ES6+), React fundamentals, Java, C#, and Python</b>, alongside database management in <b>MySQL and PostgreSQL</b>. In our Capstone Project, I served as <b>Team Project Lead and Front-End Developer</b> for an Internet Service Application System featuring AI-assisted document screening. In addition, I earned <b>2nd Runner-Up in the STI Tagisan ng Talino CODEFEST 2025–2026</b> for designing Android XML UI layouts under competitive constraints. These experiences have refined my attention to detail, analytical mindset, and ability to collaborate effectively in team-driven environments.
+            </p>
+
+            <p style="margin-bottom: 1rem; font-size: 0.92rem; line-height: 1.7;">
+              As part of my academic curriculum, I am required to complete <b>480 hours</b> of OJT training and am available to begin immediately. I am particularly eager to join <b>Endsofttech Web Solutions</b> because of your commitment to innovative, high-impact web technologies, which strongly aligns with my goal of building an engineering career in front-end and full-stack development.
+            </p>
+
+            <p style="margin-bottom: 1rem; font-size: 0.92rem; line-height: 1.7;">
+              Enclosed is my combination resume for your review. I welcome the opportunity to discuss how my technical skills and work ethic can support your development team. I am ready to submit school endorsements and attend an interview at your convenience.
+            </p>
+
+            <p style="margin-bottom: 1.5rem; font-size: 0.92rem;">
+              Thank you very much for your time and consideration.
+            </p>
+
+            <p style="font-size: 0.92rem; line-height: 1.5;">
+              Sincerely,<br><br>
+              <b>DENZEL G. FORTEZ</b><br>
+              BS Information Technology – 4th Year (BSIT 704)<br>
+              STI College Rosario<br>
+              Email: fortezdenzel@gmail.com &bull; Contact: +63 916 569 0871
+            </p>
+          </div>
+        </div>
+
+        <!-- PANEL 3: PRE-FINALS SUBMISSION SHEET -->
+        <div class="doc-panel" id="tabSubmission" style="display: none;">
+          <div class="doc-header-action-bar">
+            <span class="doc-type-badge">GE2510 Pre-Finals Assessment Output Template</span>
+            <div class="doc-actions">
+              <button onclick="window.print()" class="btn btn-sm btn-secondary">
+                <i class="bi bi-printer"></i> Print Submission Form
+              </button>
+            </div>
+          </div>
+
+          <div class="paper-container" style="border: 2px dashed var(--border-color); padding: 2.5rem; border-radius: var(--radius-md);">
+            <div style="text-align: center; margin-bottom: 1.8rem;">
+              <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--primary);">PRE-FINAL ASSESSMENT TASKS</h3>
+              <h4 style="font-size: 1.1rem; color: var(--text-secondary);">(EUTHENICS 2 - GE2510)</h4>
+            </div>
+
+            <p style="font-size: 0.95rem; line-height: 2; margin-bottom: 1rem;">
+              <b>NAME:</b> <u>DENZEL G. FORTEZ</u><br>
+              <b>PROGRAM and SECTION:</b> <u>BSIT 704</u><br>
+              <b>DATE:</b> <u>November 8, 2026</u><br>
+              <b>TITLE:</b> <u>COVER LETTER, DIGITAL PORTFOLIO AND RESUME WRITING</u>
+            </p>
+
+            <div style="margin-top: 1.5rem;">
+              <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.6rem;">DIGITAL PORTFOLIO WEBSITE LINK</h4>
+              <div style="border: 2px solid var(--primary); padding: 1.2rem; border-radius: var(--radius-sm); background: var(--bg-primary);">
+                <a href="https://zeltypo.github.io/Fortez_Digital_Portfolio/" id="portfolioSubmissionLink" target="_blank" style="font-family: var(--font-mono); font-size: 1rem; color: var(--primary); font-weight: 700; text-decoration: underline;">
+                  https://zeltypo.github.io/Fortez_Digital_Portfolio/
+                </a>
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;">
+                NOTE: Please make sure that your submitted link is accessible. After pasting the link, don't forget to press Enter to activate it and ensure that it turns blue.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       CONTACT & "LET'S TALK" SECTION
+       =================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Let's Connect &amp; <span>Collaborate</span></h2>
+        <p class="section-subtitle">
+          Have an OJT opportunity, a project to build, or would like to discuss my qualifications? Send a message or reach out across any of my channels.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information -->
+        <div class="contact-info-wrap">
+          <!-- Email Card -->
+          <a href="mailto:fortezdenzel@gmail.com" class="contact-pill-card">
+            <div class="contact-pill-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div class="contact-pill-content">
+              <h4>Email Address</h4>
+              <p>fortezdenzel@gmail.com</p>
+            </div>
+          </a>
+
+          <!-- Phone Card -->
+          <a href="tel:+639165690871" class="contact-pill-card">
+            <div class="contact-pill-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div class="contact-pill-content">
+              <h4>Contact Number</h4>
+              <p>+63 916 569 0871 / (0916) 569-0871</p>
+            </div>
+          </a>
+
+          <!-- Location Card -->
+          <div class="contact-pill-card">
+            <div class="contact-pill-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div class="contact-pill-content">
+              <h4>Location &amp; Campus</h4>
+              <p>General Trias, Cavite &bull; STI College Rosario</p>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div style="margin-top: 0.5rem;">
+            <h4 style="font-size: 0.85rem; text-transform: uppercase; color: var(--text-muted); font-weight: 600; margin-bottom: 0.75rem;">Social &amp; Developer Profiles</h4>
+            <div class="social-links-row">
+              <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="mailto:fortezdenzel@gmail.com" class="social-btn" title="Send Email">
+                <i class="bi bi-envelope-paper-fill"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://m.me/" target="_blank" rel="noopener noreferrer" class="social-btn" title="Facebook Messenger">
+                <i class="bi bi-messenger"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <form id="contactForm">
+            <div id="formAlert" style="display: none; margin-bottom: 1.2rem;"></div>
+
+            <div class="form-group">
+              <label class="form-label" for="senderName">Your Name</label>
+              <input type="text" id="senderName" name="name" class="form-control" placeholder="e.g. Hiring Manager / John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="senderEmail">Your Email</label>
+              <input type="email" id="senderEmail" name="email" class="form-control" placeholder="e.g. hr@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="senderMessage">Your Message</label>
+              <textarea id="senderMessage" name="message" class="form-control" placeholder="Tell me about your OJT position, schedule, or inquiry..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="bi bi-send-fill"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="nav-logo-badge">DF</span>
+            <div class="nav-logo-text">Denzel<span>.dev</span></div>
+          </a>
+          <p>
+            Aspiring Front-End Developer &amp; 4th-Year BSIT Student at STI College Rosario. Passionate about building robust, accessible, and user-focused web interfaces.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About &amp; Journey</a></li>
+            <li><a href="#skills">Tech Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certs">Certifications</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>OJT Documents</h4>
+          <ul>
+            <li><a href="assets/docs/Fortez_Denzel_BSIT_OJT_Resume.pdf" download>Download Hybrid Resume (PDF)</a></li>
+            <li><a href="assets/docs/Fortez_Denzel_BSIT_OJT_Cover_Letter.pdf" download>Download Cover Letter (PDF)</a></li>
+            <li><a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer">GitHub Profile (@zeltypo)</a></li>
+            <li><a href="mailto:fortezdenzel@gmail.com">Direct Email Inquiry</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 Denzel G. Fortez. All Rights Reserved. Built for GE2510 Euthenics 2 Pre-Finals Assessment &bull; STI College Rosario.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       FLOATING AI CHATBOT WIDGET
+       =================================================================== -->
+  <div class="chatbot-widget-container">
+    <button class="chatbot-toggle-btn" id="chatbotToggle" title="Ask Denzel's AI Assistant" aria-label="Open AI Chatbot">
+      <i class="bi bi-chat-dots-fill"></i>
+      <span class="chatbot-status-indicator"></span>
+    </button>
+
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <div class="chatbot-avatar"><i class="bi bi-robot"></i></div>
+          <div>
+            <div class="chatbot-title">Denzel's AI Assistant</div>
+            <div class="chatbot-sub">Online &bull; Ask me anything</div>
+          </div>
+        </div>
+        <button class="chatbot-close-btn" id="chatbotClose" aria-label="Close Chat">&times;</button>
+      </div>
+
+      <div class="chatbot-messages" id="chatMessages">
+        <div class="chat-bubble bot">
+          Hello! 👋 I'm Denzel's AI Assistant. Ask me anything about his <b>OJT availability (480 hrs)</b>, his <b>Codefest 2nd Runner-Up app</b>, his <b>PIGEM Capstone project</b>, or his <b>front-end tech stack</b>!
+        </div>
+      </div>
+
+      <div class="chatbot-chips">
+        <button class="chip-btn" data-prompt="What are Denzel's OJT hours and availability?">OJT Hours?</button>
+        <button class="chip-btn" data-prompt="Tell me about his Codefest award and mobile app.">Codefest App?</button>
+        <button class="chip-btn" data-prompt="Explain his Capstone project with AI screening.">Capstone System?</button>
+        <button class="chip-btn" data-prompt="What technologies does Denzel use?">Tech Stack?</button>
+        <button class="chip-btn" data-prompt="How can I contact Denzel for an interview?">Contact Info?</button>
+      </div>
+
+      <div class="chatbot-input-wrap">
+        <input type="text" id="chatInput" class="chatbot-input" placeholder="Type a question...">
+        <button id="chatSend" class="chatbot-send-btn" aria-label="Send Message"><i class="bi bi-send-fill"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       CERTIFICATE & SCREENSHOT LIGHTBOX MODAL
+       =================================================================== -->
+  <div class="modal-overlay" id="certModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Preview">&times;</button>
+      <div class="modal-body">
+        <img src="" alt="Certificate Preview" id="modalCertImg" class="modal-img">
+        <h3 class="modal-caption-title" id="modalCertTitle"></h3>
+        <p class="modal-caption-sub" id="modalCertSub"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
