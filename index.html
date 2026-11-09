@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Denzel Gorembalem Fortez | Portfolio</title>
-  <meta name="description" content="Personal digital portfolio of Denzel Gorembalem Fortez - 4th-Year BSIT Student & Aspiring Front-End Developer at STI College Rosario.">
+  <title>Denzel Fortez | Portfolio</title>
+  <meta name="description" content="Personal digital portfolio of Denzel Fortez - 4th-Year BSIT Student, Full-Stack & Aspiring Front-End Developer at STI College Rosario.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,65 +12,26 @@
   <div class="container">
 
     <!-- ===================================================================
-         TOP HERO SECTION: LEFT (PROFILE & ABOUT) | RIGHT (EXPERIENCE)
+         TOP HEADER AREA (CLEAN & OPEN - NOT WRAPPED IN PANEL / BUBBLE)
          =================================================================== -->
-    <div class="hero-split-grid">
-      
-      <!-- LEFT CARD: PROFILE, ABOUT & EDUCATION -->
-      <div class="profile-card">
-        <div class="profile-header-clean">
-          <img src="assets/images/denzel_profile.jpg" alt="Denzel G. Fortez" class="profile-avatar-clean">
+    <header class="top-header-clean">
+      <div class="top-profile-left">
+        <img src="assets/images/denzel_profile.jpg" alt="Denzel Fortez" class="top-avatar-img">
 
-          <div class="profile-details-clean">
-            <h1>
-              <span>Denzel G. Fortez</span>
-              <img src="assets/icons/verified_badge.png" alt="Verified" class="verified-icon">
-            </h1>
-            <div class="profile-role-clean">BSIT Student &bull; Aspiring Front-End Developer</div>
-            <div class="profile-location-clean">
-              <img src="assets/icons/location_pin.png" alt="Location" class="location-icon site-icon">
-              <span>General Trias, Cavite, Philippines</span>
-            </div>
-          </div>
-        </div>
-
-        <p class="profile-bio-text">
-          I'm a fourth-year Bachelor of Science in Information Technology student at <b>STI College Rosario</b>. Through my academic projects, I've gained practical experience developing web and mobile applications, database integration, debugging, and software testing.
-        </p>
-
-        <!-- Education Block -->
-        <div class="edu-block">
-          <div class="edu-head-title">
-            <img src="assets/icons/briefcase.png" alt="Education" class="site-icon" style="width:16px;height:16px;">
-            <span>Education</span>
+        <div class="top-profile-info">
+          <h1>
+            <span>Denzel Fortez</span>
+            <img src="assets/icons/verified_badge.png" alt="Verified" class="verified-icon">
+          </h1>
+          <div class="top-role-text">BSIT Student &bull; Aspiring Front-End Developer</div>
+          <div class="top-location-text">
+            <img src="assets/icons/location_pin.png" alt="Location" class="location-icon site-icon">
+            <span>General Trias, Cavite, Philippines</span>
           </div>
 
-          <div class="edu-item-row">
-            <div class="edu-degree-text">BS in Information Technology</div>
-            <div class="edu-school-text">STI College Rosario (2023 &ndash; 2027)</div>
-          </div>
-
-          <div class="edu-item-row">
-            <div class="edu-degree-text">Senior High School &mdash; STEM</div>
-            <div class="edu-school-text">Feapitsat College of Dasmari&ntilde;as (2022)</div>
-          </div>
-
-          <div class="edu-item-row">
-            <div class="edu-degree-text">Junior High School</div>
-            <div class="edu-school-text">Imus National High School (2020)</div>
-          </div>
-
-          <div class="edu-item-row">
-            <div class="edu-degree-text">Primary Education</div>
-            <div class="edu-school-text">Inabaan Norte Elementary School (2016)</div>
-          </div>
-        </div>
-
-        <!-- Horizontal Action Bar with Real Toggle Switch -->
-        <div class="profile-actions-bar">
-          <div class="profile-btn-group">
+          <div class="top-action-buttons">
             <button class="btn btn-primary" id="openResumeModalBtn">
-              <img src="assets/icons/email.png" alt="Resume" class="site-icon" style="filter: brightness(0) invert(1); width:16px; height:16px;">
+              <img src="assets/icons/resume.png" alt="Resume" class="site-icon" style="filter: brightness(0) invert(1); width:16px; height:16px;">
               <span>View Resume</span>
             </button>
 
@@ -79,364 +40,524 @@
               <span>Send Email</span>
             </a>
           </div>
+        </div>
+      </div>
 
-          <!-- Sleek Modern Dark/Light Mode Slider Switch -->
-          <div class="theme-switch-wrap">
-            <label class="theme-switch" title="Toggle Dark/Light Mode">
-              <input type="checkbox" id="themeSwitchCheckbox" checked>
-              <span class="theme-switch-slider">
-                <span>☀️</span>
-                <span>🌙</span>
-              </span>
-            </label>
+      <!-- Modern Dark/Light Mode Slider Switch -->
+      <div class="theme-switch-wrap">
+        <label class="theme-switch" title="Toggle Dark/Light Mode">
+          <input type="checkbox" id="themeSwitchCheckbox" checked>
+          <span class="theme-switch-slider">
+            <span>☀️</span>
+            <span>🌙</span>
+          </span>
+        </label>
+      </div>
+    </header>
+
+    <!-- ===================================================================
+         ABOUT & EDUCATION: ONE HORIZONTAL ROW WITH 2 EQUAL PANELS
+         =================================================================== -->
+    <div class="about-edu-row">
+      
+      <!-- LEFT PANEL: ABOUT ME (3 PARAGRAPHS) -->
+      <div class="content-panel">
+        <div class="panel-title">
+          <img src="assets/icons/briefcase.png" alt="About" class="site-icon">
+          <span>About Me</span>
+        </div>
+        <div class="about-body">
+          <p>
+            I am a 4th-year Bachelor of Science in Information Technology student at <b>STI College Rosario</b>, passionate about building modern, accessible, and user-centered digital solutions. I am currently focusing on Web Development, Mobile Application Development, and Software Engineering.
+          </p>
+          <p>
+            I enjoy solving real-world problems through technology—whether by developing web systems that improve daily processes or by turning creative concepts into functional applications. I am continuously exploring modern tools, writing clean code, and expanding my skill set to grow as a professional developer.
+          </p>
+          <p>
+            I am actively seeking an Internship / OJT opportunity where I can apply what I've learned and gain hands-on industry experience. I am based in General Trias, Cavite, Philippines, with a strong dedication to continuous learning and technical excellence.
+          </p>
+        </div>
+      </div>
+
+      <!-- RIGHT PANEL: EDUCATION -->
+      <div class="content-panel">
+        <div class="panel-title">
+          <img src="assets/icons/open_book.png" alt="Education" class="site-icon">
+          <span>Education</span>
+        </div>
+        <div class="edu-list">
+          <div class="edu-entry">
+            <div class="edu-degree">BS in Information Technology</div>
+            <div class="edu-school">STI College Rosario (2023 &ndash; 2027)</div>
+          </div>
+
+          <div class="edu-entry">
+            <div class="edu-degree">Senior High School &mdash; STEM</div>
+            <div class="edu-school">Feapitsat College of Dasmari&ntilde;as (2022)</div>
+          </div>
+
+          <div class="edu-entry">
+            <div class="edu-degree">Junior High School</div>
+            <div class="edu-school">Imus National High School (2020)</div>
+          </div>
+
+          <div class="edu-entry">
+            <div class="edu-degree">Primary Education</div>
+            <div class="edu-school">Inabaan Norte Elementary School (2016)</div>
           </div>
         </div>
       </div>
 
-      <!-- RIGHT CARD: EXPERIENCE ONLY -->
-      <div class="exp-card">
-        <div class="section-head-title">
+    </div>
+
+    <!-- ===================================================================
+         EXPERIENCE PANEL (BOTTOM OF ABOUT & EDUCATION)
+         =================================================================== -->
+    <div class="exp-panel-wrap">
+      <div class="content-panel">
+        <div class="panel-title">
           <img src="assets/icons/briefcase.png" alt="Experience" class="site-icon">
           <span>Experience</span>
         </div>
 
-        <div class="exp-list-clean">
+        <div class="exp-items-list">
           <!-- Item 1: Capstone -->
-          <div class="exp-item-box">
-            <div class="exp-item-top">
-              <span class="exp-role-name">Team Project Lead &bull; Full-Stack Developer</span>
-              <span class="exp-date-badge">2026</span>
+          <div class="exp-box">
+            <div class="exp-box-top">
+              <span class="exp-role-title">Team Project Lead &bull; Full-Stack Developer (Capstone Project &mdash; 4th Year BSIT)</span>
+              <span class="exp-year-badge">2026</span>
             </div>
-            <p class="exp-desc-text">
+            <p class="exp-text">
               Directed system architecture, GitHub version control, and full-stack development for the <i>Internet Service Application System with AI-Assisted Requirements Screening</i>. Coordinated team tasks and automated AI document verification.
             </p>
           </div>
 
           <!-- Item 2: Tech Community Participation -->
-          <div class="exp-item-box">
-            <div class="exp-item-top">
-              <span class="exp-role-name">Tech Community Participation</span>
-              <span class="exp-date-badge">2024 &ndash; 2026</span>
+          <div class="exp-box">
+            <div class="exp-box-top">
+              <span class="exp-role-title">Tech Community Participation</span>
+              <span class="exp-year-badge">2024 &ndash; 2026</span>
             </div>
-            <p class="exp-desc-text">
-              Participated twice in STI Codefest competitions (2024&ndash;2026), achieving <b>2nd Place in March 2026</b>. Specialized in debugging, XML layout skeletons, fragments, and Java login interface UX in Android Studio. Attended STI TechTalks on AI and Grok in November 2025.
+            <p class="exp-text">
+              Participated twice in STI Codefest competitions (2024&ndash;2026), achieving <b>2nd Place in March 2026</b>. Specialized in debugging, XML layout skeletons, fragments, and Java login UX in Android Studio. Attended STI TechTalks on AI and Grok in November 2025.
             </p>
           </div>
 
           <!-- Item 3: Freelance -->
-          <div class="exp-item-box">
-            <div class="exp-item-top">
-              <span class="exp-role-name">Freelance Digital Product Provider</span>
-              <span class="exp-date-badge">2024 &ndash; 2025</span>
+          <div class="exp-box">
+            <div class="exp-box-top">
+              <span class="exp-role-title">Freelance Digital Product Provider</span>
+              <span class="exp-year-badge">2024 &ndash; 2025</span>
             </div>
-            <p class="exp-desc-text">
-              Listed digital products in online communities and eBay, handled foreign buyer inquiries, payment invoicing, and PayPal/local transactions. Designed promotional banners in Canva to enhance visual presentation.
+            <p class="exp-text">
+              Listed digital products in online communities and eBay, handled foreign buyer inquiries, payment invoicing via PayPal, and designed promotional banners in Canva to enhance visual presentation.
             </p>
           </div>
         </div>
       </div>
-
     </div>
 
     <!-- ===================================================================
-         02 — SKILLS & TECH STACK
+         SKILLS & STACKS (NO SECTION NUMBER)
          =================================================================== -->
-    <div class="content-section">
-      <div class="section-head-title">
+    <div class="section-wrapper">
+      <div class="section-clean-heading">
         <img src="assets/icons/chemistry.png" alt="Skills" class="site-icon">
-        <span>02 &mdash; Skills &amp; Stacks</span>
+        <span>Skills &amp; Stacks</span>
       </div>
 
-      <div class="skills-category-grid">
-        <div class="skill-category-card">
-          <h3 class="skill-cat-title">Frontend Development</h3>
-          <div class="skill-pills-wrap">
-            <span class="skill-pill">HTML5</span>
-            <span class="skill-pill">CSS3</span>
-            <span class="skill-pill">JavaScript (ES6+)</span>
-            <span class="skill-pill">Android XML UI</span>
+      <div class="skills-cards-grid">
+        <div class="skill-category-panel">
+          <h3 class="skill-panel-title">Frontend Development</h3>
+          <div class="skill-pill-tags">
+            <span class="skill-pill-item">HTML5</span>
+            <span class="skill-pill-item">CSS3</span>
+            <span class="skill-pill-item">JavaScript (ES6+)</span>
+            <span class="skill-pill-item">Android XML UI</span>
           </div>
         </div>
 
-        <div class="skill-category-card">
-          <h3 class="skill-cat-title">Backend &amp; Databases</h3>
-          <div class="skill-pills-wrap">
-            <span class="skill-pill">Java</span>
-            <span class="skill-pill">Python</span>
-            <span class="skill-pill">C#</span>
-            <span class="skill-pill">SQL</span>
-            <span class="skill-pill">PostgreSQL</span>
-            <span class="skill-pill">Supabase</span>
-            <span class="skill-pill">.NET / ASP.NET</span>
+        <div class="skill-category-panel">
+          <h3 class="skill-panel-title">Backend &amp; Databases</h3>
+          <div class="skill-pill-tags">
+            <span class="skill-pill-item">Java</span>
+            <span class="skill-pill-item">Python</span>
+            <span class="skill-pill-item">C#</span>
+            <span class="skill-pill-item">SQL</span>
+            <span class="skill-pill-item">PostgreSQL</span>
+            <span class="skill-pill-item">Supabase</span>
+            <span class="skill-pill-item">.NET / ASP.NET</span>
           </div>
         </div>
 
-        <div class="skill-category-card">
-          <h3 class="skill-cat-title">Development &amp; Design Tools</h3>
-          <div class="skill-pills-wrap">
-            <span class="skill-pill">Visual Studio Code</span>
-            <span class="skill-pill">Visual Studio</span>
-            <span class="skill-pill">Git</span>
-            <span class="skill-pill">GitHub</span>
-            <span class="skill-pill">Figma</span>
-            <span class="skill-pill">Android Studio</span>
-            <span class="skill-pill">Unity 3D</span>
-            <span class="skill-pill">Canva</span>
+        <div class="skill-category-panel">
+          <h3 class="skill-panel-title">Development &amp; Design Tools</h3>
+          <div class="skill-pill-tags">
+            <span class="skill-pill-item">Visual Studio Code</span>
+            <span class="skill-pill-item">Visual Studio</span>
+            <span class="skill-pill-item">Git</span>
+            <span class="skill-pill-item">GitHub</span>
+            <span class="skill-pill-item">Figma</span>
+            <span class="skill-pill-item">Android Studio</span>
+            <span class="skill-pill-item">Unity 3D</span>
+            <span class="skill-pill-item">Canva</span>
           </div>
         </div>
 
-        <div class="skill-category-card">
-          <h3 class="skill-cat-title">Professional Skills</h3>
-          <div class="skill-pills-wrap">
-            <span class="skill-pill">Leadership</span>
-            <span class="skill-pill">Teamwork</span>
-            <span class="skill-pill">Communication</span>
-            <span class="skill-pill">Empathy</span>
-            <span class="skill-pill">Adaptability</span>
-            <span class="skill-pill">Problem Solving</span>
+        <div class="skill-category-panel">
+          <h3 class="skill-panel-title">Professional Skills</h3>
+          <div class="skill-pill-tags">
+            <span class="skill-pill-item">Leadership</span>
+            <span class="skill-pill-item">Teamwork</span>
+            <span class="skill-pill-item">Communication</span>
+            <span class="skill-pill-item">Empathy</span>
+            <span class="skill-pill-item">Adaptability</span>
+            <span class="skill-pill-item">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         PROJECTS (NO SECTION NUMBER - 3 COLUMNS RESPONSIVE)
+         =================================================================== -->
+    <div class="section-wrapper">
+      <div class="section-clean-heading">
+        <img src="assets/icons/layers.png" alt="Projects" class="site-icon">
+        <span>Projects</span>
+      </div>
+
+      <div class="projects-responsive-grid">
+        <!-- Project 1: Capstone -->
+        <div class="project-card-clean">
+          <div class="project-img-box">
+            <img src="assets/projects/pigem_capstone_hero.jpg" alt="Internet Service Application System">
+          </div>
+          <div class="project-card-content">
+            <h3 class="project-card-name">Internet Service Application System with AI-Assisted Requirements Screening</h3>
+            <p class="project-card-desc">
+              Web application with Gemini AI document verification, automated Gmail alerts, Captcha defense, and monitoring dashboard.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag-label">Web</span>
+              <span class="tag-label">Gemini AI</span>
+              <span class="tag-label">Gmail API</span>
+              <span class="tag-label">PostgreSQL</span>
+              <span class="tag-label">Vercel</span>
+            </div>
+            <div class="project-action-links">
+              <a href="https://pigem-system-web.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                Live Demo &nearr;
+              </a>
+              <span style="color:var(--border-color);">&bull;</span>
+              <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                GitHub &nearr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: I.S.I.P. -->
+        <div class="project-card-clean">
+          <div class="project-img-box" style="background:#203824;">
+            <img src="assets/projects/isip_species_id.png" alt="ISIP Mobile App" style="object-fit:contain;">
+          </div>
+          <div class="project-card-content">
+            <h3 class="project-card-name">I.S.I.P. &mdash; Instant Species Identification Portable</h3>
+            <p class="project-card-desc">
+              A mobile application that identifies animal species from images, developed collaboratively with a five-member team for Technopreneurship.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag-label">Mobile</span>
+              <span class="tag-label">Android</span>
+              <span class="tag-label">Image Recognition</span>
+              <span class="tag-label">Team Project</span>
+            </div>
+            <div class="project-action-links">
+              <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                GitHub &nearr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Pet Adoption Mobile App UI Skeleton -->
+        <div class="project-card-clean">
+          <div class="project-img-box" style="background:#13261a;">
+            <img src="assets/certs/codefest_2nd_runner_up_2026.jpg" alt="Codefest App" style="object-fit:cover;">
+          </div>
+          <div class="project-card-content">
+            <h3 class="project-card-name">Pet Adoption Mobile App UI Skeleton</h3>
+            <p class="project-card-desc">
+              Android mobile application UI skeleton featuring animal catalog browsing, fragments, and adoption inquiry flows. Awarded 2nd Place at STI Codefest.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag-label">Android Studio</span>
+              <span class="tag-label">Java</span>
+              <span class="tag-label">XML Layouts</span>
+              <span class="tag-label">2nd Place Codefest</span>
+            </div>
+            <div class="project-action-links">
+              <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                GitHub &nearr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: City Driver -->
+        <div class="project-card-clean">
+          <div class="project-img-box">
+            <img src="assets/projects/city_driver_play.jpg" alt="City Driver Road Safety">
+          </div>
+          <div class="project-card-content">
+            <h3 class="project-card-name">City Driver: Road Safety Challenge</h3>
+            <p class="project-card-desc">
+              3D driving simulation in Unity reinforcing traffic signal compliance, road signs, and pedestrian hazard awareness. Programmed in C#.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag-label">Unity 3D</span>
+              <span class="tag-label">C#</span>
+              <span class="tag-label">Game Physics</span>
+            </div>
+            <div class="project-action-links">
+              <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                GitHub &nearr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Philippine Group 4 Bank -->
+        <div class="project-card-clean">
+          <div class="project-img-box">
+            <img src="assets/projects/ph_group4_bank.jpg" alt="Philippine Group 4 Bank">
+          </div>
+          <div class="project-card-content">
+            <h3 class="project-card-name">Philippine Group 4 Bank System</h3>
+            <p class="project-card-desc">
+              Desktop banking management software featuring account creation, balance checking, transfers, and secure PIN authentication.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag-label">C#</span>
+              <span class="tag-label">.NET</span>
+              <span class="tag-label">Visual Studio</span>
+              <span class="tag-label">SQL</span>
+            </div>
+            <div class="project-action-links">
+              <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                GitHub &nearr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Redhub Cake -->
+        <div class="project-card-clean">
+          <div class="project-img-box">
+            <img src="assets/projects/redhub_cake_menu.jpg" alt="Redhub Cake Ordering">
+          </div>
+          <div class="project-card-content">
+            <h3 class="project-card-name">Redhub Cake Order Processing System</h3>
+            <p class="project-card-desc">
+              Java desktop bakery ordering application with catalog selection, billing computation, animated processing states, and database connectivity.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag-label">Java</span>
+              <span class="tag-label">NetBeans</span>
+              <span class="tag-label">SQL</span>
+            </div>
+            <div class="project-action-links">
+              <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                GitHub &nearr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Digital Portfolio -->
+        <div class="project-card-clean">
+          <div class="project-img-box" style="background: linear-gradient(135deg, #064e3b, #0f2419); display:flex; align-items:center; justify-content:center; color:#a7f3d0; font-size: 2.2rem;">
+            <span>&lt;DF/&gt;</span>
+          </div>
+          <div class="project-card-content">
+            <h3 class="project-card-name">Denzel Fortez Digital Portfolio</h3>
+            <p class="project-card-desc">
+              Personal portfolio built with semantic HTML5, CSS3 with dark/white theme switcher, Alex Cruz ATS resume modal, and responsive design.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag-label">HTML5</span>
+              <span class="tag-label">CSS3</span>
+              <span class="tag-label">JavaScript</span>
+              <span class="tag-label">GitHub Pages</span>
+            </div>
+            <div class="project-action-links">
+              <a href="https://zeltypo.github.io/Fortez_Digital_Portfolio/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                Live Demo &nearr;
+              </a>
+              <span style="color:var(--border-color);">&bull;</span>
+              <a href="https://github.com/zeltypo/Fortez_Digital_Portfolio" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                GitHub &nearr;
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- ===================================================================
-         03 — PROJECTS & 04 — CERTIFICATES (COMPACT & BALANCED)
+         CERTIFICATES (NO SECTION NUMBER - SAME SIZE AS PROJECTS)
          =================================================================== -->
-    <div class="content-section">
-      <div class="projects-certs-grid">
-        
-        <!-- LEFT: PROJECTS -->
-        <div>
-          <div class="section-head-title">
-            <img src="assets/icons/chemistry.png" alt="Projects" class="site-icon">
-            <span>03 &mdash; Projects</span>
-          </div>
+    <div class="section-wrapper">
+      <div class="section-clean-heading">
+        <img src="assets/icons/check.png" alt="Certificates" class="site-icon">
+        <span>Certificates</span>
+      </div>
 
-          <!-- Project 1: Capstone -->
-          <div class="project-item-card">
-            <div class="project-thumb-compact">
-              <img src="assets/projects/pigem_capstone_hero.jpg" alt="Internet Service Application System">
-            </div>
-            <div class="project-info-compact">
-              <h3 class="project-name-compact">Internet Service Application System with AI-Assisted Requirements Screening</h3>
-              <p class="project-desc-compact">
-                Web-based internet application management platform with Gemini AI document verification, automated Gmail alerts, Captcha security, and an admin monitoring pipeline dashboard.
-              </p>
-              <div class="project-tags-row">
-                <span class="project-tag-item">Web</span>
-                <span class="project-tag-item">Gemini AI</span>
-                <span class="project-tag-item">Gmail API</span>
-                <span class="project-tag-item">PostgreSQL</span>
-                <span class="project-tag-item">Vercel</span>
-              </div>
-            </div>
+      <div class="certs-responsive-grid">
+        <!-- Cert 1: TechTalk Future with AI -->
+        <div class="cert-card-clean cert-clickable" data-img="assets/certs/techtalk_building_future_ai.png" data-title="Building the Future with AI, Powering the Next-Gen Innovators">
+          <div class="cert-card-thumb">
+            <img src="assets/certs/techtalk_building_future_ai.png" alt="Building the Future with AI">
           </div>
-
-          <!-- Project 2: I.S.I.P. -->
-          <div class="project-item-card">
-            <div class="project-thumb-compact" style="background:#203824;">
-              <img src="assets/projects/isip_species_id.png" alt="ISIP Mobile App" style="object-fit:contain;">
-            </div>
-            <div class="project-info-compact">
-              <h3 class="project-name-compact">I.S.I.P. &mdash; Instant Species Identification Portable</h3>
-              <p class="project-desc-compact">
-                A mobile application that identifies animal species from images, developed collaboratively with a five-member team for Technopreneurship.
-              </p>
-              <div class="project-tags-row">
-                <span class="project-tag-item">Mobile</span>
-                <span class="project-tag-item">Android</span>
-                <span class="project-tag-item">Image Recognition</span>
-                <span class="project-tag-item">Team Project</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3: Pet Adoption Mobile App UI Skeleton -->
-          <div class="project-item-card">
-            <div class="project-info-compact">
-              <h3 class="project-name-compact">Pet Adoption Mobile App UI Skeleton</h3>
-              <p class="project-desc-compact">
-                Android mobile application UI skeleton featuring animal catalog browsing, fragments, and adoption inquiry flows. Awarded 2nd Place at STI Codefest (March 2026).
-              </p>
-              <div class="project-tags-row">
-                <span class="project-tag-item">Android Studio</span>
-                <span class="project-tag-item">Java</span>
-                <span class="project-tag-item">XML Layouts</span>
-                <span class="project-tag-item">2nd Place Codefest</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4: City Driver -->
-          <div class="project-item-card">
-            <div class="project-thumb-compact">
-              <img src="assets/projects/city_driver_play.jpg" alt="City Driver Road Safety">
-            </div>
-            <div class="project-info-compact">
-              <h3 class="project-name-compact">City Driver: Road Safety Challenge</h3>
-              <p class="project-desc-compact">
-                3D driving simulation in Unity reinforcing traffic signal compliance, road signs, and pedestrian hazard awareness. Programmed in C#.
-              </p>
-              <div class="project-tags-row">
-                <span class="project-tag-item">Unity 3D</span>
-                <span class="project-tag-item">C#</span>
-                <span class="project-tag-item">Game Physics</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5: Philippine Group 4 Bank -->
-          <div class="project-item-card">
-            <div class="project-thumb-compact">
-              <img src="assets/projects/ph_group4_bank.jpg" alt="Philippine Group 4 Bank">
-            </div>
-            <div class="project-info-compact">
-              <h3 class="project-name-compact">Philippine Group 4 Bank System</h3>
-              <p class="project-desc-compact">
-                Desktop banking management software featuring account creation, balance checking, transfers, and secure PIN authentication.
-              </p>
-              <div class="project-tags-row">
-                <span class="project-tag-item">C#</span>
-                <span class="project-tag-item">.NET</span>
-                <span class="project-tag-item">Visual Studio</span>
-                <span class="project-tag-item">SQL</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 6: Redhub Cake -->
-          <div class="project-item-card">
-            <div class="project-thumb-compact">
-              <img src="assets/projects/redhub_cake_menu.jpg" alt="Redhub Cake Ordering">
-            </div>
-            <div class="project-info-compact">
-              <h3 class="project-name-compact">Redhub Cake Order Processing System</h3>
-              <p class="project-desc-compact">
-                Java desktop bakery ordering application with catalog selection, billing computation, animated processing states, and database connectivity.
-              </p>
-              <div class="project-tags-row">
-                <span class="project-tag-item">Java</span>
-                <span class="project-tag-item">NetBeans</span>
-                <span class="project-tag-item">SQL</span>
-              </div>
-            </div>
+          <div class="cert-card-content">
+            <h4 class="cert-card-name">Building the Future with AI, Powering the Next-Gen Innovators</h4>
+            <p class="cert-card-issuer">TechTalk &bull; STI College Rosario &bull; 2025-11</p>
+            <span class="cert-view-link">View full certificate &rarr;</span>
           </div>
         </div>
 
-        <!-- RIGHT: CERTIFICATES -->
-        <div>
-          <div class="section-head-title">
-            <img src="assets/icons/check.png" alt="Certificates" class="site-icon">
-            <span>04 &mdash; Certificates</span>
+        <!-- Cert 2: TechTalk Grok -->
+        <div class="cert-card-clean cert-clickable" data-img="assets/certs/techtalk_development_of_ai_grok.png" data-title="Development of AI and Demo Using Grok">
+          <div class="cert-card-thumb">
+            <img src="assets/certs/techtalk_development_of_ai_grok.png" alt="Demo Using Grok">
           </div>
-
-          <!-- Cert 1: TechTalk Building Future with AI -->
-          <div class="cert-item-card cert-clickable" data-img="assets/certs/techtalk_building_future_ai.png" data-title="Building the Future with AI, Powering the Next-Gen Innovators">
-            <div class="cert-mini-thumb">
-              <img src="assets/certs/techtalk_building_future_ai.png" alt="AI TechTalk">
-            </div>
-            <div class="cert-info">
-              <h4>Building the Future with AI, Powering the Next-Gen Innovators</h4>
-              <p>TechTalk &bull; STI College Rosario &bull; 2025-11</p>
-            </div>
-          </div>
-
-          <!-- Cert 2: TechTalk Grok -->
-          <div class="cert-item-card cert-clickable" data-img="assets/certs/techtalk_development_of_ai_grok.png" data-title="Development of AI and Demo Using Grok">
-            <div class="cert-mini-thumb">
-              <img src="assets/certs/techtalk_development_of_ai_grok.png" alt="Grok Demo">
-            </div>
-            <div class="cert-info">
-              <h4>Development of AI and Demo Using Grok</h4>
-              <p>TechTalk &bull; STI College Rosario &bull; 2025-11</p>
-            </div>
-          </div>
-
-          <!-- Cert 3: Java Fundamentals -->
-          <div class="cert-item-card cert-clickable" data-img="assets/certs/oracle_java_fundamentals.png" data-title="Java Fundamentals Course Completion">
-            <div class="cert-mini-thumb">
-              <img src="assets/certs/oracle_java_fundamentals.png" alt="Oracle Academy">
-            </div>
-            <div class="cert-info">
-              <h4>Java Fundamentals</h4>
-              <p>Oracle Academy &bull; 2024-06</p>
-            </div>
-          </div>
-
-          <!-- Cert 4: Codefest 2nd Place -->
-          <div class="cert-item-card cert-clickable" data-img="assets/certs/codefest_2nd_runner_up_2026.jpg" data-title="STI Tagisan ng Talino CODEFEST (2nd Place)">
-            <div class="cert-mini-thumb">
-              <img src="assets/certs/codefest_2nd_runner_up_2026.jpg" alt="Codefest 2nd Place">
-            </div>
-            <div class="cert-info">
-              <h4>STI Tagisan ng Talino CODEFEST (2nd Place)</h4>
-              <p>STI College Rosario &bull; 2026-03</p>
-            </div>
+          <div class="cert-card-content">
+            <h4 class="cert-card-name">Development of AI and Demo Using Grok</h4>
+            <p class="cert-card-issuer">TechTalk &bull; STI College Rosario &bull; 2025-11</p>
+            <span class="cert-view-link">View full certificate &rarr;</span>
           </div>
         </div>
 
+        <!-- Cert 3: Java Fundamentals -->
+        <div class="cert-card-clean cert-clickable" data-img="assets/certs/oracle_java_fundamentals.png" data-title="Java Fundamentals Course Completion">
+          <div class="cert-card-thumb">
+            <img src="assets/certs/oracle_java_fundamentals.png" alt="Java Fundamentals">
+          </div>
+          <div class="cert-card-content">
+            <h4 class="cert-card-name">Java Fundamentals</h4>
+            <p class="cert-card-issuer">Oracle Academy &bull; 2024-06</p>
+            <span class="cert-view-link">View full certificate &rarr;</span>
+          </div>
+        </div>
+
+        <!-- Cert 4: Codefest 2nd Place -->
+        <div class="cert-card-clean cert-clickable" data-img="assets/certs/codefest_2nd_runner_up_2026.jpg" data-title="STI Tagisan ng Talino CODEFEST (2nd Place)">
+          <div class="cert-card-thumb">
+            <img src="assets/certs/codefest_2nd_runner_up_2026.jpg" alt="Codefest 2nd Place">
+          </div>
+          <div class="cert-card-content">
+            <h4 class="cert-card-name">STI Tagisan ng Talino CODEFEST (2nd Place)</h4>
+            <p class="cert-card-issuer">STI College Rosario &bull; 2026-03</p>
+            <span class="cert-view-link">View full certificate &rarr;</span>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- ===================================================================
-         ONE HORIZONTAL LINE: GOALS, SOCIAL LINKS, CONTACT, & REACH (4 BUBBLE COLS)
+         BOTTOM PANELS: GOALS & GET IN TOUCH + SOCIAL LINKS
          =================================================================== -->
-    <div class="bottom-horizontal-bar">
-      <!-- Col 1: Goal -->
-      <div class="bottom-col">
-        <h4>Goal</h4>
-        <div class="bottom-pill-wrap">
-          <span class="bottom-bubble-pill" style="font-size: 0.8rem; line-height: 1.4;">
-            <img src="assets/icons/goal.png" alt="Goal" class="site-icon">
-            <span>Actively seeking an OJT / internship opportunity</span>
-          </span>
+    <div class="bottom-sections-wrap">
+      <!-- PANEL A: GOALS & GET IN TOUCH -->
+      <div class="goal-touch-panel">
+        <div class="goal-touch-header">
+          <img src="assets/icons/goal.png" alt="Goal" class="site-icon">
+          <span>Goal</span>
         </div>
+        <p class="goal-desc-text">
+          Actively seeking an OJT / internship opportunity to apply full-stack and front-end development skills in building scalable, real-world applications. Ready to learn from experienced engineers and contribute clean, dependable code to production projects.
+        </p>
+        <a href="mailto:fortezdenzel@gmail.com?subject=OJT%20Internship%20Inquiry%20-%20Denzel%20Fortez" target="_blank" rel="noopener noreferrer" class="goal-action-pill">
+          <span>Get in touch</span>
+          <span>&nearr;</span>
+        </a>
       </div>
 
-      <!-- Col 2: Social Links -->
-      <div class="bottom-col">
-        <h4>Social Links</h4>
-        <div class="bottom-pill-wrap">
-          <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" class="bottom-bubble-pill">
+      <!-- PANEL B: SOCIAL LINKS -->
+      <div class="social-links-panel">
+        <div class="social-panel-header">
+          <img src="assets/icons/communication.png" alt="Social" class="site-icon">
+          <span>Social Links</span>
+        </div>
+        <div class="social-pills-row">
+          <a href="https://github.com/zeltypo" target="_blank" rel="noopener noreferrer" class="social-bubble-pill">
             <img src="assets/icons/github-sign.png" alt="GitHub" class="site-icon">
             <span>GitHub</span>
           </a>
-          <a href="https://linkedin.com/in/denzel-fortez" target="_blank" rel="noopener noreferrer" class="bottom-bubble-pill">
+          <a href="https://www.linkedin.com/in/denzel-fortez-498216392/" target="_blank" rel="noopener noreferrer" class="social-bubble-pill">
             <svg style="width:16px;height:16px;fill:currentColor;" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             <span>LinkedIn</span>
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="bottom-bubble-pill">
+          <a href="https://www.instagram.com/zel40z?exln=eXZzY3p1cG5hNmw1" target="_blank" rel="noopener noreferrer" class="social-bubble-pill">
             <img src="assets/icons/instagram.png" alt="Instagram" class="site-icon">
             <span>Instagram</span>
           </a>
         </div>
       </div>
+    </div>
 
-      <!-- Col 3: Contact -->
-      <div class="bottom-col">
-        <h4>Contact</h4>
-        <div class="bottom-pill-wrap">
-          <span class="bottom-bubble-pill">
-            <span>Get in touch &rarr;</span>
-          </span>
-          <a href="tel:+639165690871" class="bottom-bubble-pill">
-            <span>📞 (0916) 569-0871</span>
-          </a>
-        </div>
+    <!-- ===================================================================
+         THE VERY LAST: LET'S TALK (3 HORIZONTAL CLICKABLE BUBBLE PANELS)
+         =================================================================== -->
+    <div class="lets-talk-section">
+      <div class="lets-talk-heading">
+        <img src="assets/icons/communication.png" alt="Talk" class="site-icon">
+        <span>Let's Talk</span>
       </div>
 
-      <!-- Col 4: Let's Talk & Reach -->
-      <div class="bottom-col">
-        <h4>Let's Talk</h4>
-        <div class="bottom-pill-wrap">
-          <a href="mailto:fortezdenzel@gmail.com" class="bottom-bubble-pill">
-            <img src="assets/icons/email.png" alt="Email" class="site-icon">
-            <span>fortezdenzel@gmail.com</span>
-          </a>
-          <a href="https://m.me/" target="_blank" rel="noopener noreferrer" class="bottom-bubble-pill">
-            <span>💬 Chat with me</span>
-          </a>
-        </div>
+      <div class="lets-talk-bubbles-row">
+        <!-- Bubble 1: Email -->
+        <a href="mailto:fortezdenzel@gmail.com" class="talk-card-bubble">
+          <div class="talk-card-left">
+            <div class="talk-icon-box">
+              <img src="assets/icons/email.png" alt="Email" class="site-icon">
+            </div>
+            <div class="talk-info-labels">
+              <span class="talk-label">Email</span>
+              <span class="talk-value">fortezdenzel@gmail.com</span>
+            </div>
+          </div>
+          <span class="talk-arrow">&rarr;</span>
+        </a>
+
+        <!-- Bubble 2: Phone -->
+        <a href="tel:+639165690871" class="talk-card-bubble">
+          <div class="talk-card-left">
+            <div class="talk-icon-box">
+              <span style="font-size:1.1rem;">📞</span>
+            </div>
+            <div class="talk-info-labels">
+              <span class="talk-label">Let's Talk</span>
+              <span class="talk-value">(0916) 569-0871</span>
+            </div>
+          </div>
+          <span class="talk-arrow">&rarr;</span>
+        </a>
+
+        <!-- Bubble 3: Messenger -->
+        <a href="https://m.me/akosidenzel.32" target="_blank" rel="noopener noreferrer" class="talk-card-bubble">
+          <div class="talk-card-left">
+            <div class="talk-icon-box">
+              <span style="font-size:1.1rem;">💬</span>
+            </div>
+            <div class="talk-info-labels">
+              <span class="talk-label">Messenger</span>
+              <span class="talk-value">Chat with me</span>
+            </div>
+          </div>
+          <span class="talk-arrow">&rarr;</span>
+        </a>
       </div>
     </div>
 
@@ -510,7 +631,7 @@
        CERTIFICATE LIGHTBOX MODAL
        =================================================================== -->
   <div class="modal-overlay" id="certLightboxModal">
-    <div class="modal-container" style="max-width: 700px;">
+    <div class="modal-container" style="max-width: 720px;">
       <div class="modal-header-bar">
         <h3 id="certLightboxTitle">Certificate View</h3>
         <button class="modal-close-btn" id="closeCertLightboxBtn">&times;</button>
@@ -588,12 +709,12 @@
     botClose.addEventListener('click', () => botWindow.classList.remove('open'));
 
     const botKnowledge = {
-      about: "Denzel Fortez is a 4th-year BSIT student at STI College Rosario and aspiring front-end developer specializing in responsive web interfaces and mobile XML UI.",
+      about: "Denzel Fortez is a 4th-year BSIT student at STI College Rosario and aspiring front-end developer specializing in responsive web interfaces, mobile XML UI, and full-stack integration.",
       goals: "Denzel is actively seeking an OJT / internship opportunity to apply full-stack and front-end development skills in building scalable, real-world applications.",
       codefest: "At the STI Tagisan ng Talino Codefest (March 2026), Denzel won 2nd Place as front-end Android developer, building responsive XML UI layouts and navigation fragments for a pet adoption app.",
       capstone: "Denzel serves as Team Project Lead and Full-Stack Developer for his Capstone: Internet Service Application System with AI-Assisted Requirements Screening, featuring Gemini AI document verification and Gmail API alerts.",
       skills: "Denzel's stack: HTML5, CSS3, JavaScript, Android XML UI, Java, Python, C#, SQL, PostgreSQL, Supabase, .NET/ASP.NET, VS Code, Git, GitHub, Figma, Android Studio, and Unity.",
-      contact: "You can reach Denzel via email at fortezdenzel@gmail.com, phone at (0916) 569-0871, or on GitHub at github.com/zeltypo."
+      contact: "You can reach Denzel via email at fortezdenzel@gmail.com, phone at (0916) 569-0871, or on LinkedIn at linkedin.com/in/denzel-fortez-498216392/."
     };
 
     function appendChatMsg(sender, text) {
