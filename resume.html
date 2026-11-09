@@ -3,31 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Denzel G. Fortez - Combination (Hybrid) Resume</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Denzel Gorembalem Fortez - Resume</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
-
-    :root {
-      --primary: #059669;
-      --primary-dark: #064e3b;
-      --text-main: #0f172a;
-      --text-muted: #475569;
-      --border: #cbd5e1;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       background: #f1f5f9;
-      color: var(--text-main);
+      color: #0f172a;
       line-height: 1.45;
-      padding: 2rem 1rem;
+      padding: 1.5rem 1rem;
     }
 
-    .top-bar {
+    .top-actions {
       max-width: 8.5in;
-      margin: 0 auto 1.5rem auto;
+      margin: 0 auto 1rem auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -36,227 +27,252 @@
     .btn {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      padding: 0.6rem 1.2rem;
-      background: var(--primary);
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      background: #059669;
       color: #ffffff;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 6px;
       font-weight: 600;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       border: none;
       cursor: pointer;
     }
 
-    .btn:hover { background: var(--primary-dark); }
     .btn-secondary { background: #334155; }
-    .btn-secondary:hover { background: #1e293b; }
+    .btn:hover { opacity: 0.9; }
 
-    .resume-page {
+    .resume-sheet {
       width: 8.5in;
       min-height: 11in;
       background: #ffffff;
       margin: 0 auto;
       padding: 0.45in 0.5in;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
       border-radius: 4px;
     }
 
     .name-title {
-      text-align: center;
-      font-size: 1.75rem;
+      font-size: 1.6rem;
       font-weight: 800;
-      color: var(--primary-dark);
+      color: #064e3b;
+      text-align: center;
       letter-spacing: 0.5px;
     }
 
     .contact-line {
+      font-size: 0.82rem;
+      color: #475569;
       text-align: center;
-      font-size: 0.85rem;
-      color: var(--text-muted);
       margin-top: 0.2rem;
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.5rem;
     }
 
-    .divider {
-      height: 2px;
-      background: var(--primary);
+    .rule-line {
+      height: 1.5px;
+      background: #059669;
       border: none;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.65rem;
     }
 
-    .section-title {
-      font-size: 0.95rem;
+    .sec-head {
+      font-size: 0.88rem;
       font-weight: 800;
-      color: var(--primary-dark);
-      border-bottom: 1px solid #94a3b8;
+      color: #065f46;
+      border-bottom: 1px solid #cbd5e1;
       padding-bottom: 0.15rem;
       margin-top: 0.65rem;
-      margin-bottom: 0.4rem;
-      letter-spacing: 0.5px;
+      margin-bottom: 0.35rem;
       text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
-    ul.bullet-list {
+    ul.clean-list {
       list-style-type: square;
       padding-left: 1.15rem;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.35rem;
     }
 
-    ul.bullet-list li {
-      font-size: 0.82rem;
-      color: var(--text-main);
+    ul.clean-list li {
+      font-size: 0.8rem;
+      color: #1e293b;
       margin-bottom: 0.2rem;
       line-height: 1.35;
     }
 
-    .skills-table {
+    .skills-tbl {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.82rem;
-      margin-bottom: 0.4rem;
+      font-size: 0.8rem;
+      margin-bottom: 0.35rem;
     }
 
-    .skills-table td {
+    .skills-tbl td {
       padding: 0.15rem 0;
       vertical-align: top;
     }
 
-    .skills-table td.label-col {
-      width: 25%;
+    .skills-tbl td.lbl {
+      width: 22%;
       font-weight: 700;
-      color: var(--text-main);
+      color: #0f172a;
     }
 
-    .project-header {
+    .item-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      font-size: 0.86rem;
+      font-size: 0.84rem;
       font-weight: 700;
-      margin-top: 0.35rem;
+      margin-top: 0.3rem;
     }
 
-    .project-sub {
-      font-size: 0.78rem;
-      font-style: italic;
-      color: var(--text-muted);
-      margin-bottom: 0.25rem;
+    .item-sub {
+      font-size: 0.76rem;
+      color: #64748b;
+      margin-bottom: 0.2rem;
     }
 
     @media print {
       body { background: #ffffff; padding: 0; }
-      .top-bar { display: none; }
-      .resume-page { box-shadow: none; padding: 0.3in 0.4in; width: 100%; min-height: auto; }
+      .top-actions { display: none; }
+      .resume-sheet { box-shadow: none; padding: 0.35in 0.45in; width: 100%; min-height: auto; }
     }
   </style>
 </head>
 <body>
 
-  <div class="top-bar">
-    <a href="index.html" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Back to Portfolio</a>
-    <div style="display: flex; gap: 0.6rem;">
+  <div class="top-actions">
+    <a href="index.html" class="btn btn-secondary">&larr; Back to Portfolio</a>
+    <div style="display: flex; gap: 0.5rem;">
       <a href="assets/docs/Fortez_Denzel_BSIT_OJT_Resume.pdf" download="Fortez_Denzel_BSIT_OJT_Resume.pdf" class="btn">
-        <i class="bi bi-download"></i> Download ATS PDF
+        Download PDF
       </a>
       <button onclick="window.print()" class="btn btn-secondary">
-        <i class="bi bi-printer"></i> Print / Save PDF
+        Print / Save PDF
       </button>
     </div>
   </div>
 
-  <div class="resume-page">
-    <h1 class="name-title">DENZEL G. FORTEZ</h1>
+  <div class="resume-sheet">
+    <h1 class="name-title">DENZEL GOREMBALEM FORTEZ</h1>
     <div class="contact-line">
-      General Trias, Cavite, Philippines &bull; +63 916 569 0871 &bull; fortezdenzel@gmail.com &bull; github.com/zeltypo
+      General Trias, Cavite, Philippines &bull; +63 916 569 0871 &bull; fortezdenzel@gmail.com &bull; github.com/zeltypo<br>
+      <b>Full-Stack Developer &amp; Aspiring Front-End Developer</b> &bull; BSIT Student (STI College Rosario)
     </div>
-    <hr class="divider">
+    <hr class="rule-line">
 
-    <div class="section-title">Summary of Qualifications</div>
-    <ul class="bullet-list">
-      <li><b>Fourth-year BSIT student</b> at STI College Rosario specializing in front-end web development, responsive mobile UI/UX engineering, and API integrations with strong problem-solving and software development skills.</li>
-      <li><b>Award-winning competition lead:</b> 2nd Runner-Up in STI Tagisan ng Talino CODEFEST 2025–2026 (Android XML/Java UI development) and Capstone Team Project Lead for an AI-assisted web application system.</li>
-      <li>Hands-on proficiency across modern web technologies, relational databases, game development in Unity, version control via Git/GitHub, and cloud deployment on Vercel.</li>
+    <div class="sec-head">Summary of Qualifications</div>
+    <ul class="clean-list">
+      <li>Fourth-year BSIT student with 3 to 4 years of leadership in programming teams, specializing in web and mobile applications, backend integration, and UI/UX design.</li>
+      <li>Proven track record: Team Project Lead on AI-assisted Capstone, 2nd Place in STI Tagisan ng Talino CODEFEST (March 2026), and freelance digital product sales experience.</li>
     </ul>
 
-    <div class="section-title">Key Technical Skills</div>
-    <table class="skills-table">
+    <div class="sec-head">Skills &amp; Technologies</div>
+    <table class="skills-tbl">
       <tr>
-        <td class="label-col">Programming &amp; Front-End:</td>
-        <td>HTML5, CSS3, JavaScript (ES6+), React basics, XML (Android UI), Python, Java, C#</td>
+        <td class="lbl">Frontend:</td>
+        <td>HTML5, CSS3, JavaScript (ES6+), React, Bootstrap, Android XML UI Layouts</td>
       </tr>
       <tr>
-        <td class="label-col">Databases &amp; Backend:</td>
-        <td>PostgreSQL, MySQL / XAMPP, Microsoft SQL Server, SAP Fundamentals</td>
+        <td class="lbl">Backend &amp; Databases:</td>
+        <td>Java, Python, C#, Supabase, MySQL, PostgreSQL, .NET, ASP.NET</td>
       </tr>
       <tr>
-        <td class="label-col">APIs &amp; Integrations:</td>
-        <td>Gemini AI API integration, Gmail API, Captcha API, RESTful APIs, GitHub API</td>
+        <td class="lbl">Tools &amp; Frameworks:</td>
+        <td>Visual Studio Code, Visual Studio, Git, GitHub, Figma, Android Studio, Unity 3D, Canva</td>
       </tr>
       <tr>
-        <td class="label-col">Tools, IDEs &amp; Platforms:</td>
-        <td>Git, GitHub, Vercel, Visual Studio, VS Code, Apache NetBeans, Android Studio, Unity, Linux, Windows CLI</td>
-      </tr>
-      <tr>
-        <td class="label-col">Core Competencies:</td>
-        <td>Responsive Web Design, UI/UX Layout Skeleton, Technical Documentation, Software Testing, Debugging</td>
+        <td class="lbl">Professional Skills:</td>
+        <td>Leadership, Teamwork, Communication, Empathy, Adaptability, Problem-Solving</td>
       </tr>
     </table>
 
-    <div class="section-title">Experience &amp; Technical Projects</div>
-    
-    <div class="project-header">
-      <span><b>Internet Service Application System with AI Screening (PIGEM)</b> &bull; Capstone Project</span>
-      <span>2025 – 2026</span>
+    <div class="sec-head">Experience &amp; Leadership</div>
+    <div class="item-header">
+      <span><b>Team Project Lead &mdash; Capstone Project</b> | STI College Rosario</span>
+      <span>2025 &ndash; 2026</span>
     </div>
-    <div class="project-sub">Role: Team Project Lead &amp; Front-End Developer | Tech: HTML5, CSS3, JS, Gemini API, Gmail API, Captcha API, PostgreSQL/MySQL, Vercel</div>
-    <ul class="bullet-list">
-      <li>Directed frontend architecture and responsive client portal for internet application management, coordinating sprint tasks via GitHub.</li>
-      <li>Integrated Gemini AI API for automated applicant requirements screening and validation, reducing manual processing overhead.</li>
-      <li>Engineered admin pipeline dashboard with application status tracking, calendar scheduling, and automated Gmail notifications.</li>
+    <ul class="clean-list">
+      <li>Led a student developer team in designing and implementing an AI-assisted web application system; coordinated GitHub workflow and core system logic.</li>
     </ul>
 
-    <div class="project-header">
-      <span><b>Vet &amp; Pet Adoption Android App Skeleton</b> &bull; STI Tagisan ng Talino CODEFEST</span>
-      <span>March 2026</span>
+    <div class="item-header">
+      <span><b>Tech Community Participation &amp; Codefest Competitor</b> | STI College Rosario</span>
+      <span>2024 &ndash; 2026</span>
     </div>
-    <div class="project-sub">Role: Front-End Android Developer (2nd Runner-Up Award) | Tech: Android Studio, Java, XML, UI Fragments</div>
-    <ul class="bullet-list">
-      <li>Engineered responsive XML UI layouts, fragments, and navigation structure for pet catalog browsing and adoption inquiries under timed competition rules.</li>
-      <li>Awarded <b>2nd Runner-Up</b> in the local level championship at STI College Rosario for robust UI/UX execution and clean design skeleton.</li>
+    <ul class="clean-list">
+      <li>Participated twice in STI Codefest competitions (2024&ndash;2026); achieved 2nd Place in March 2026 developing Android XML UI skeletons and fragments in Android Studio.</li>
     </ul>
 
-    <div class="project-header" style="margin-top: 0.35rem;">
-      <span><b>Additional Technical Implementations</b></span>
+    <div class="item-header">
+      <span><b>Freelance Digital Product Provider</b> | Online &amp; E-Commerce</span>
+      <span>2024 &ndash; 2025</span>
     </div>
-    <ul class="bullet-list">
-      <li><b>City Driver: Road Safety Challenge (Unity 3D / C#)</b> &mdash; <i>Lead Programmer</i>: Built 3D driving mechanics &amp; road safety simulations.</li>
-      <li><b>Philippine Group 4 Bank System (C# / Visual Studio)</b> &mdash; <i>Developer</i>: Built secure desktop banking GUI for transactions &amp; account management.</li>
-      <li><b>Redhub Cake Ordering System (Java / NetBeans / MySQL)</b> &mdash; <i>Developer</i>: Implemented catalog navigation, order pipelines &amp; processing loading states.</li>
+    <ul class="clean-list">
+      <li>Managed listings in online communities and eBay, handled international client communication, PayPal invoicing, and designed promotional banners in Canva.</li>
     </ul>
 
-    <div class="section-title">Education</div>
-    <div class="project-header">
-      <span><b>STI College Rosario</b> &mdash; Tejero, Rosario, Cavite</span>
-      <span>Expected Graduation: June 2027</span>
+    <div class="sec-head">Projects</div>
+    <div class="item-header">
+      <span><b>Internet Service Application System with AI-Assisted Requirements Screening</b> &mdash; <i>Lead Developer</i></span>
     </div>
-    <div class="project-sub">Bachelor of Science in Information Technology (BSIT) &bull; Section: BSIT 704 &bull; 4th Year Student</div>
-    <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.3rem;">
-      <b>Relevant Coursework:</b> Web Development &amp; Systems, Mobile Application Development, Database Management Systems, Object-Oriented Programming (Java/C#), Systems Analysis &amp; Design, Information Security.
-    </p>
-
-    <div class="section-title">Honors, Certifications &amp; Trainings</div>
-    <ul class="bullet-list">
-      <li><b>2nd Runner-Up &ndash; CODEFEST</b>, STI Tagisan ng Talino 2025–2026 Local Level (STI College Rosario, March 11, 2026)</li>
-      <li><b>Award of Course Completion: Java Fundamentals</b> &ndash; Oracle Academy (Beronika Peña, Instructor, June 19, 2024)</li>
-      <li><b>Certificate of Participation: TechTalk &ndash; Building the Future with AI &amp; Generative AI Ethics</b> (STI College Rosario, Nov 28, 2025)</li>
-      <li><b>Certificate of Participation: TechTalk &ndash; Development of AI &amp; Demo Using Grok</b> (STI College Rosario, Nov 28, 2025)</li>
+    <ul class="clean-list">
+      <li>Web system featuring automated document verification via Gemini AI API, automated email notifications, and an admin monitoring dashboard.</li>
     </ul>
 
-    <div class="section-title">OJT Availability &amp; References</div>
-    <p style="font-size: 0.82rem;">
-      <b>Required OJT Hours:</b> 480 Hours &nbsp;|&nbsp; <b>Preferred Start Date:</b> Immediate / February 2026 &nbsp;|&nbsp; <b>References:</b> Available upon request.
-    </p>
+    <div class="item-header">
+      <span><b>I.S.I.P. &mdash; Instant Species Identification Portable</b> &mdash; <i>Mobile Developer (Team Project)</i></span>
+    </div>
+    <ul class="clean-list">
+      <li>Mobile application identifying animal species from photos, developed collaboratively with a five-member team for Technopreneurship.</li>
+    </ul>
+
+    <div class="item-header">
+      <span><b>Vet &amp; Pet Adoption Mobile App UI Skeleton</b> &mdash; <i>Front-End Android Developer (2nd Place Codefest)</i></span>
+    </div>
+    <ul class="clean-list">
+      <li>Android mobile application UI skeleton featuring animal catalog browsing, fragment transitions, and adoption inquiry flows.</li>
+    </ul>
+
+    <div class="item-header">
+      <span><b>City Driver: Road Safety Challenge</b> &mdash; <i>Lead Programmer (Unity 3D / C#)</i></span>
+    </div>
+    <ul class="clean-list">
+      <li>3D driving simulation reinforcing road safety signs, pedestrian awareness, and traffic violation scoring.</li>
+    </ul>
+
+    <div class="item-header">
+      <span><b>Philippine Group 4 Bank System (C#) &amp; Redhub Cake Ordering System (Java)</b></span>
+    </div>
+    <ul class="clean-list">
+      <li>Desktop banking application with secure PIN verification; Java bakery ordering application with MySQL database integration.</li>
+    </ul>
+
+    <div class="sec-head">Education</div>
+    <div class="item-header">
+      <span><b>BS in Information Technology</b> &mdash; STI College Rosario</span>
+      <span>2023 &ndash; 2027</span>
+    </div>
+    <div class="item-header">
+      <span><b>Senior High School (STEM)</b> &mdash; Feapitsat College of Dasmari&ntilde;as</span>
+      <span>2022</span>
+    </div>
+    <div class="item-header">
+      <span><b>Junior High School</b> &mdash; Imus National High School</span>
+      <span>2020</span>
+    </div>
+    <div class="item-header">
+      <span><b>Primary Education</b> &mdash; Inabaan Norte Elementary School</span>
+      <span>2016</span>
+    </div>
+
+    <div class="sec-head">Certifications &amp; OJT Status</div>
+    <ul class="clean-list">
+      <li><b>Java Fundamentals</b> &ndash; Oracle Academy (June 2024) &nbsp;|&nbsp; <b>AI TechTalks</b> &ndash; STI College Rosario (Nov 2025)</li>
+      <li><b>CODEFEST 2nd Place</b> &ndash; STI Tagisan ng Talino (March 2026)</li>
+      <li><b>OJT Status:</b> Actively seeking an OJT / internship opportunity &bull; <b>References:</b> Available upon request</li>
+    </ul>
   </div>
 
 </body>
