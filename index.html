@@ -586,21 +586,28 @@
   </div>
 
   <!-- ===================================================================
-       RESUME PDF POPUP MODAL (Clean viewer with Download button)
+       RESUME & COVER LETTER MODAL (View Live Documents with Print Options)
        =================================================================== -->
   <div class="modal-overlay" id="resumeModal">
     <div class="modal-container">
       <div class="modal-header-bar">
-        <h3>Denzel Fortez &mdash; Resume</h3>
-        <div style="display: flex; align-items: center; gap: 0.8rem;">
-          <a href="assets/docs/Fortez_Denzel_BSIT_OJT_Resume.pdf" download="Fortez_Denzel_BSIT_OJT_Resume.pdf" class="btn btn-primary" style="padding: 0.4rem 0.9rem; font-size: 0.82rem;">
-            Download PDF
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <button class="btn btn-primary" id="modalTabResume" style="padding: 0.35rem 0.85rem; font-size: 0.82rem;">
+            Resume
+          </button>
+          <button class="btn btn-secondary" id="modalTabCover" style="padding: 0.35rem 0.85rem; font-size: 0.82rem;">
+            Cover Letter
+          </button>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <a href="resume.html" target="_blank" id="modalOpenExternalLink" class="btn btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.82rem;">
+            Open in New Tab &nearr;
           </a>
           <button class="modal-close-btn" id="closeResumeModalBtn">&times;</button>
         </div>
       </div>
-      <div class="modal-body-scroll">
-        <iframe src="assets/docs/Fortez_Denzel_BSIT_OJT_Resume.pdf" style="width: 100%; height: 75vh; border: none; border-radius: var(--radius-sm);" title="Resume PDF"></iframe>
+      <div class="modal-body-scroll" style="padding: 0;">
+        <iframe src="resume.html" id="docModalIframe" style="width: 100%; height: 78vh; border: none;" title="Career Document Viewer"></iframe>
       </div>
     </div>
   </div>
@@ -645,15 +652,41 @@
       }
     });
 
-    // Resume Modal
+    // Resume & Cover Letter Modal
     const resumeModal = document.getElementById('resumeModal');
     const openResumeBtn = document.getElementById('openResumeModalBtn');
     const closeResumeBtn = document.getElementById('closeResumeModalBtn');
+    const tabResume = document.getElementById('modalTabResume');
+    const tabCover = document.getElementById('modalTabCover');
+    const modalIframe = document.getElementById('docModalIframe');
+    const modalExternalLink = document.getElementById('modalOpenExternalLink');
 
-    openResumeBtn.addEventListener('click', () => resumeModal.classList.add('open'));
+    openResumeBtn.addEventListener('click', () => {
+      // Default to resume
+      tabResume.className = 'btn btn-primary';
+      tabCover.className = 'btn btn-secondary';
+      modalIframe.src = 'resume.html';
+      modalExternalLink.href = 'resume.html';
+      resumeModal.classList.add('open');
+    });
+
     closeResumeBtn.addEventListener('click', () => resumeModal.classList.remove('open'));
     resumeModal.addEventListener('click', (e) => {
       if (e.target === resumeModal) resumeModal.classList.remove('open');
+    });
+
+    tabResume.addEventListener('click', () => {
+      tabResume.className = 'btn btn-primary';
+      tabCover.className = 'btn btn-secondary';
+      modalIframe.src = 'resume.html';
+      modalExternalLink.href = 'resume.html';
+    });
+
+    tabCover.addEventListener('click', () => {
+      tabCover.className = 'btn btn-primary';
+      tabResume.className = 'btn btn-secondary';
+      modalIframe.src = 'cover_letter.html';
+      modalExternalLink.href = 'cover_letter.html';
     });
 
     // Certificate Lightbox

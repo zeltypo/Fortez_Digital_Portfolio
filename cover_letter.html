@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Denzel Fortez - OJT Cover Letter</title>
+  <title>Denzel Fortez - OJT Cover Letter (GE2510)</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12pt;
+      color: #000000;
       background: #f1f5f9;
-      color: #0f172a;
-      line-height: 1.6;
+      line-height: 1.5;
       padding: 1.5rem 1rem;
     }
 
@@ -22,6 +26,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-family: Arial, sans-serif;
     }
 
     .btn {
@@ -29,91 +34,107 @@
       align-items: center;
       gap: 0.4rem;
       padding: 0.5rem 1rem;
-      background: #059669;
+      background: #000000;
       color: #ffffff;
       text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
-      font-size: 0.85rem;
-      border: none;
+      font-size: 10pt;
+      font-weight: bold;
+      border: 1px solid #000000;
       cursor: pointer;
     }
 
-    .btn-secondary { background: #334155; }
-    .btn:hover { opacity: 0.9; }
+    .btn-secondary {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
 
     .letter-sheet {
       width: 8.5in;
       min-height: 11in;
       background: #ffffff;
       margin: 0 auto;
-      padding: 0.7in 0.8in;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-      border-radius: 4px;
+      padding: 1in;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     }
 
-    .name-title {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: #064e3b;
-    }
-
-    .contact-line {
-      font-size: 0.82rem;
-      color: #475569;
-      margin-top: 0.15rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .rule-line {
-      height: 1.5px;
-      background: #059669;
-      border: none;
+    .sender-block {
       margin-bottom: 1.2rem;
+      line-height: 1.4;
+    }
+
+    .sender-name {
+      font-size: 13pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0.2rem;
+    }
+
+    .sender-detail {
+      font-size: 12pt;
+    }
+
+    .sender-link {
+      color: #000000;
+      text-decoration: underline;
     }
 
     .date-row {
-      font-size: 0.9rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
+      font-size: 12pt;
     }
 
-    .recipient-info {
-      font-size: 0.9rem;
-      line-height: 1.45;
-      margin-bottom: 1.1rem;
+    .recipient-block {
+      margin-bottom: 1.2rem;
+      line-height: 1.4;
+      font-size: 12pt;
     }
 
     .subject-line {
-      font-size: 0.92rem;
-      font-weight: 700;
-      color: #065f46;
-      margin-bottom: 1rem;
+      font-weight: bold;
+      margin-bottom: 1.2rem;
+      font-size: 12pt;
     }
 
     .salutation {
-      font-size: 0.92rem;
-      margin-bottom: 0.9rem;
+      margin-bottom: 1.2rem;
+      font-size: 12pt;
     }
 
     p.letter-p {
-      font-size: 0.92rem;
-      line-height: 1.65;
-      margin-bottom: 1rem;
-      color: #1e293b;
+      font-size: 12pt;
+      line-height: 1.5;
+      margin-bottom: 1.2rem;
       text-align: justify;
     }
 
     .closing-block {
-      margin-top: 1.4rem;
-      font-size: 0.92rem;
-      line-height: 1.5;
+      margin-top: 1.5rem;
+      font-size: 12pt;
+      line-height: 1.4;
+    }
+
+    .sign-space {
+      height: 2rem;
     }
 
     @media print {
-      body { background: #ffffff; padding: 0; }
-      .top-actions { display: none; }
-      .letter-sheet { box-shadow: none; padding: 0.5in 0.6in; width: 100%; min-height: auto; }
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .top-actions {
+        display: none;
+      }
+      .letter-sheet {
+        box-shadow: none;
+        padding: 0.8in;
+        width: 100%;
+        min-height: auto;
+      }
     }
   </style>
 </head>
@@ -121,56 +142,58 @@
 
   <div class="top-actions">
     <a href="index.html" class="btn btn-secondary">&larr; Back to Portfolio</a>
-    <div style="display: flex; gap: 0.5rem;">
-      <a href="assets/docs/Fortez_Denzel_BSIT_OJT_Cover_Letter.pdf" download="Fortez_Denzel_BSIT_OJT_Cover_Letter.pdf" class="btn">
-        Download PDF
-      </a>
-      <button onclick="window.print()" class="btn btn-secondary">
-        Print / Save PDF
-      </button>
-    </div>
+    <button onclick="window.print()" class="btn">
+      Print / Save as PDF
+    </button>
   </div>
 
   <div class="letter-sheet">
-    <h1 class="name-title">DENZEL FORTEZ</h1>
-    <div class="contact-line">
-      General Trias, Cavite, Philippines &bull; (0916) 569-0871 &bull; fortezdenzel@gmail.com &bull; github.com/zeltypo
+    <!-- SENDER INFORMATION -->
+    <div class="sender-block">
+      <div class="sender-name">Denzel Fortez</div>
+      <div class="sender-detail">Email: fortezdenzel@gmail.com</div>
+      <div class="sender-detail">Portfolio: <a href="https://zeltypo.github.io/Fortez_Digital_Portfolio/" class="sender-link">https://zeltypo.github.io/Fortez_Digital_Portfolio/</a></div>
+      <div class="sender-detail">Contact: (0916) 569-0871</div>
+      <div class="sender-detail">Location: General Trias, Cavite, Philippines</div>
     </div>
-    <hr class="rule-line">
 
+    <!-- DATE -->
     <div class="date-row">November 9, 2026</div>
 
-    <div class="recipient-info">
-      <b>The Hiring Manager / HR Department</b><br>
+    <!-- RECIPIENT -->
+    <div class="recipient-block">
+      The Hiring Manager / HR Department<br>
       Endsofttech Web Solutions<br>
       Cavite, Philippines
     </div>
 
+    <!-- SUBJECT LINE -->
     <div class="subject-line">
       SUBJECT: Inquiry About On-the-Job Training Opportunities &ndash; Denzel Fortez
     </div>
 
+    <!-- SALUTATION -->
     <div class="salutation">Dear Hiring Manager,</div>
 
+    <!-- 1. INTRODUCTION -->
     <p class="letter-p">
-      Good day.<br><br>
       My name is Denzel Fortez, a fourth-year Bachelor of Science in Information Technology student at STI College Rosario. I am writing to inquire about possible On-the-Job Training opportunities at Endsofttech Web Solutions.
     </p>
 
+    <!-- 2. BODY -->
     <p class="letter-p">
-      I am particularly interested in gaining practical experience in front-end and full-stack web development, especially using JavaScript and related web technologies. Through my coursework and academic projects, I have developed foundational knowledge in web development, database management, and UI layout engineering, which I hope to apply and further improve in a professional environment.
+      I am particularly interested in gaining practical experience in front-end and full-stack web development, especially using JavaScript and related web technologies. Through my coursework and academic projects, I have developed foundational knowledge in web development, database integration, and user interface engineering, which I hope to apply and further improve in a professional environment.
     </p>
 
+    <!-- 3. CONCLUSION (MERGED WITH THANK YOU) -->
     <p class="letter-p">
-      I would greatly appreciate it if you could provide information regarding available face-to-face OJT opportunities and application requirements. I would be happy to provide any necessary documents, such as my resume and school endorsement, or attend an interview at your convenience.
+      I would greatly appreciate it if you could provide information regarding available face-to-face OJT opportunities and application requirements. I would be pleased to provide any necessary documents, such as my resume and school endorsement, or attend an interview at your convenience. Thank you for your time and consideration.
     </p>
 
-    <p class="letter-p">
-      Thank you for your time and consideration.
-    </p>
-
+    <!-- FORMAL SIGN-OFF -->
     <div class="closing-block">
-      Sincerely,<br><br>
+      Sincerely,
+      <div class="sign-space"></div>
       <b>Denzel Fortez</b><br>
       BS Information Technology &ndash; 4th Year<br>
       STI College Rosario<br>

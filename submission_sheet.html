@@ -4,102 +4,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pre-Final Assessment Tasks (Euthenics 2) - Submission Sheet</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap');
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12pt;
+      color: #000000;
       background: #f1f5f9;
-      color: #0f172a;
-      padding: 2rem 1rem;
+      line-height: 1.5;
+      padding: 1.5rem 1rem;
     }
 
     .top-bar {
       max-width: 8.5in;
-      margin: 0 auto 1.5rem auto;
+      margin: 0 auto 1.2rem auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-family: Arial, sans-serif;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      padding: 0.6rem 1.2rem;
-      background: #059669;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      background: #000000;
       color: #ffffff;
       text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      border: none;
+      font-size: 10pt;
+      font-weight: bold;
+      border: 1px solid #000000;
       cursor: pointer;
     }
 
-    .btn:hover { background: #047857; }
-    .btn-secondary { background: #334155; }
-    .btn-secondary:hover { background: #1e293b; }
+    .btn-secondary {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
 
     .sheet-page {
       width: 8.5in;
       min-height: 11in;
       background: #ffffff;
       margin: 0 auto;
-      padding: 1in 1in;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      border-radius: 4px;
+      padding: 1in;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
       display: flex;
       flex-direction: column;
     }
 
     .sheet-title {
       text-align: center;
-      font-size: 1.45rem;
-      font-weight: 800;
+      font-size: 14pt;
+      font-weight: bold;
       margin-bottom: 0.2rem;
-      color: #000000;
     }
 
     .sheet-sub {
       text-align: center;
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 2.5rem;
-      color: #000000;
+      font-size: 13pt;
+      font-weight: bold;
+      margin-bottom: 2.2rem;
     }
 
     .info-row {
-      font-size: 1.05rem;
-      margin-bottom: 1.4rem;
-      line-height: 1.8;
+      font-size: 12pt;
+      margin-bottom: 1.2rem;
+      line-height: 1.6;
     }
 
     .info-row span.field {
-      font-weight: 700;
+      font-weight: bold;
     }
 
     .info-row span.val {
       display: inline-block;
-      border-bottom: 1.5px solid #000000;
-      min-width: 350px;
-      padding-left: 0.5rem;
+      border-bottom: 1px solid #000000;
+      min-width: 320px;
+      padding-left: 0.4rem;
     }
 
     .box-label {
-      font-size: 1.05rem;
-      font-weight: 700;
-      margin-top: 2rem;
-      margin-bottom: 0.8rem;
+      font-size: 12pt;
+      font-weight: bold;
+      margin-top: 1.8rem;
+      margin-bottom: 0.6rem;
     }
 
     .link-box {
       width: 100%;
-      height: 2.4in;
-      border: 2px solid #000000;
-      padding: 1.5rem;
+      height: 2.2in;
+      border: 1.5px solid #000000;
+      padding: 1.2rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -107,48 +113,57 @@
     }
 
     .link-text {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 1.15rem;
+      font-family: Arial, sans-serif;
+      font-size: 12pt;
       color: #0000ee;
       text-decoration: underline;
-      font-weight: 700;
+      font-weight: bold;
       word-break: break-all;
     }
 
     .note-text {
       margin-top: 1rem;
-      font-size: 0.85rem;
-      line-height: 1.5;
-      color: #1e293b;
+      font-size: 11pt;
+      line-height: 1.45;
     }
 
     .note-text b {
-      color: #000000;
+      font-weight: bold;
     }
 
     @media print {
-      body { background: #ffffff; padding: 0; }
-      .top-bar { display: none; }
-      .sheet-page { box-shadow: none; padding: 0.8in 0.8in; width: 100%; min-height: auto; }
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .top-bar {
+        display: none;
+      }
+      .sheet-page {
+        box-shadow: none;
+        padding: 0.8in;
+        width: 100%;
+        min-height: auto;
+      }
     }
   </style>
 </head>
 <body>
 
   <div class="top-bar">
-    <a href="index.html" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Back to Portfolio</a>
+    <a href="index.html" class="btn btn-secondary">&larr; Back to Portfolio</a>
     <button onclick="window.print()" class="btn">
-      <i class="bi bi-printer"></i> Print / Save Submission PDF
+      Print / Save Submission Sheet
     </button>
   </div>
 
   <div class="sheet-page">
-    <h1 class="sheet-title">PRE-FINAL ASSESSMENT TASKS</h1>
-    <h2 class="sheet-sub">(EUTHENICS 2)</h2>
+    <div class="sheet-title">PRE-FINAL ASSESSMENT TASKS</div>
+    <div class="sheet-sub">(EUTHENICS 2)</div>
 
     <div class="info-row">
       <span class="field">NAME:</span>
-      <span class="val">DENZEL G. FORTEZ</span>
+      <span class="val">DENZEL FORTEZ</span>
     </div>
 
     <div class="info-row">
@@ -158,10 +173,10 @@
 
     <div class="info-row">
       <span class="field">DATE:</span>
-      <span class="val">November 8, 2026</span>
+      <span class="val">November 9, 2026</span>
     </div>
 
-    <div class="info-row" style="margin-bottom: 2rem;">
+    <div class="info-row" style="margin-bottom: 1.8rem;">
       <span class="field">TITLE:</span>
       <span class="val">COVER LETTER, DIGITAL PORTFOLIO AND RESUME WRITING</span>
     </div>
