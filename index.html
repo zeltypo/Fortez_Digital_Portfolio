@@ -30,10 +30,10 @@
           </div>
 
           <div class="top-action-buttons">
-            <button class="btn btn-primary" id="openResumeModalBtn">
+            <a href="resume.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
               <img src="assets/icons/resume.png" alt="Resume" class="site-icon" style="filter: brightness(0) invert(1); width:16px; height:16px;">
               <span>View Resume</span>
-            </button>
+            </a>
 
             <a href="mailto:fortezdenzel@gmail.com" class="btn btn-secondary">
               <img src="assets/icons/email.png" alt="Email" class="site-icon" style="width:16px; height:16px;">
@@ -585,32 +585,7 @@
     </div>
   </div>
 
-  <!-- ===================================================================
-       RESUME & COVER LETTER MODAL (View Live Documents with Print Options)
-       =================================================================== -->
-  <div class="modal-overlay" id="resumeModal">
-    <div class="modal-container">
-      <div class="modal-header-bar">
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <button class="btn btn-primary" id="modalTabResume" style="padding: 0.35rem 0.85rem; font-size: 0.82rem;">
-            Resume
-          </button>
-          <button class="btn btn-secondary" id="modalTabCover" style="padding: 0.35rem 0.85rem; font-size: 0.82rem;">
-            Cover Letter
-          </button>
-        </div>
-        <div style="display: flex; align-items: center; gap: 0.6rem;">
-          <a href="resume.html" target="_blank" id="modalOpenExternalLink" class="btn btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.82rem;">
-            Open in New Tab &nearr;
-          </a>
-          <button class="modal-close-btn" id="closeResumeModalBtn">&times;</button>
-        </div>
-      </div>
-      <div class="modal-body-scroll" style="padding: 0;">
-        <iframe src="resume.html" id="docModalIframe" style="width: 100%; height: 78vh; border: none;" title="Career Document Viewer"></iframe>
-      </div>
-    </div>
-  </div>
+
 
   <!-- ===================================================================
        CERTIFICATE LIGHTBOX MODAL
@@ -650,43 +625,6 @@
         html.setAttribute('data-theme', 'light');
         localStorage.setItem('df_theme', 'light');
       }
-    });
-
-    // Resume & Cover Letter Modal
-    const resumeModal = document.getElementById('resumeModal');
-    const openResumeBtn = document.getElementById('openResumeModalBtn');
-    const closeResumeBtn = document.getElementById('closeResumeModalBtn');
-    const tabResume = document.getElementById('modalTabResume');
-    const tabCover = document.getElementById('modalTabCover');
-    const modalIframe = document.getElementById('docModalIframe');
-    const modalExternalLink = document.getElementById('modalOpenExternalLink');
-
-    openResumeBtn.addEventListener('click', () => {
-      // Default to resume
-      tabResume.className = 'btn btn-primary';
-      tabCover.className = 'btn btn-secondary';
-      modalIframe.src = 'resume.html';
-      modalExternalLink.href = 'resume.html';
-      resumeModal.classList.add('open');
-    });
-
-    closeResumeBtn.addEventListener('click', () => resumeModal.classList.remove('open'));
-    resumeModal.addEventListener('click', (e) => {
-      if (e.target === resumeModal) resumeModal.classList.remove('open');
-    });
-
-    tabResume.addEventListener('click', () => {
-      tabResume.className = 'btn btn-primary';
-      tabCover.className = 'btn btn-secondary';
-      modalIframe.src = 'resume.html';
-      modalExternalLink.href = 'resume.html';
-    });
-
-    tabCover.addEventListener('click', () => {
-      tabCover.className = 'btn btn-primary';
-      tabResume.className = 'btn btn-secondary';
-      modalIframe.src = 'cover_letter.html';
-      modalExternalLink.href = 'cover_letter.html';
     });
 
     // Certificate Lightbox
