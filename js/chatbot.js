@@ -76,7 +76,7 @@ function getDenzelBotReply(userText) {
   }
 
   if (q.includes('resume') || q.includes('cover letter') || q.includes('cv')) {
-    return `📄 You can view and download Denzel's <b>ATS Hybrid Resume</b> and <b>OJT Cover Letter</b> directly on this site under the <a href="#documents" style="color:#10b981;text-decoration:underline;">Career Documents</a> section!`;
+    return `📄 You can directly view Denzel's <a href="Denzel_Fortez_Resume.pdf" target="_blank" style="color:#10b981;text-decoration:underline;font-weight:bold;">Official Resume (PDF) &nearr;</a> or explore the <a href="resume.html" target="_blank" style="color:#10b981;text-decoration:underline;">Resume Web View &nearr;</a>!`;
   }
 
   if (q.includes('hello') || q.includes('hi') || q.includes('hey') || q.includes('good day')) {
